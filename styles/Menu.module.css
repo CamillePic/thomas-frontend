@@ -1,0 +1,8 @@
+.ant-menu-submenu-inline.ant-menu-submenu-open > .ant-menu-submenu-title,
+.ant-menu-submenu-inline > .ant-menu-submenu-title:hover {
+  background-color: transparent;
+}
+
+.ant-menu-submenu.ant-menu-submenu-inline > .ant-menu-submenu-title:active {
+  background-color: transparent;
+}
