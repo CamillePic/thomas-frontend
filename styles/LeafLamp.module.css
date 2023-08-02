@@ -1,0 +1,80 @@
+.container {
+  height: 100vh;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;   
+}
+
+.hotspots {
+  position: relative;
+}
+
+.hotspotA {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  animation: fader 2s ease infinite;
+  transition: all 0.2s;
+  color: rgba(0, 0, 0, 15%);
+  top: 50%;
+  left: 25%;
+}
+
+.hotspotA:hover {
+  animation-play-state: paused;
+  color: white;
+  background-color: white;
+  border: solid 0.5px white;
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.hotspotB {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  animation: fader 2s ease infinite;
+  transition: all 0.2s;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 15%);
+  top: 32%;
+  left: 44%;
+  border: none;
+}
+
+.hotspotB:hover {
+  animation-play-state: paused;
+  color: #fff;
+  background-color: white;
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.hotspotC {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  padding-top: 6px;
+  border-radius: 50%;
+  animation: fader 2s ease infinite;
+  transition: all 0.2s;
+  color: rgba(0, 0, 0, 15%);
+  top: 25%;
+  left: 68%;
+  border: none;
+}
+
+.hotspotC:hover {
+  animation-play-state: paused;
+  color: #fff;
+  background-color: white;
+  width: 2.3rem;
+  height: 2.3rem;
+}

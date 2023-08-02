@@ -6,12 +6,11 @@ function BranchLamp() {
 
   return (
     <div>
-          {/* <Image
-            src="/LIGHTS_Leaf lamp_Website_1_230302.png"
-            layout="fill"
-            objectFit="cover"
+          <Image
+            src="/GL_WIDESCREEN_OFF.jpg"
             alt="photo"
-          /> */}
+            sizes="(max-height: 1261px) 100vw, 1261px"
+          />
           Branch Lamp
         </div>
   );

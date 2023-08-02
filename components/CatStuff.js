@@ -6,12 +6,12 @@ function CatStuff() {
 
   return (
     <div>
-          {/* <Image
+          <Image
             src="/LIGHTS_Leaf lamp_Website_1_230302.png"
             layout="fill"
             objectFit="cover"
             alt="photo"
-          /> */}
+          />
           Cat Stuff
         </div>
   );
