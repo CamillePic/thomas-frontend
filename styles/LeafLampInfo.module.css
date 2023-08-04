@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(3, auto);
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .infoContainer {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "EB Garamond", regular;
+  }
+  
+  .menu {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+  
+  .gallery {
+    grid-column: 2 / 3;
+    grid-row: 3/4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageItem {
+    width: calc(40%); /* Adjust this value based on the number of images you want per row */
+    height: auto;
+
+  }
+  

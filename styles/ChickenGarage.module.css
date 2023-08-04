@@ -1,0 +1,60 @@
+.container {
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+  }
+  
+  .hotspots {
+    position: relative;
+  }
+  
+  .hotspotA {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 50%;
+    animation: fader 2s ease infinite;
+    transition: all 0.2s;
+    color: rgba(0, 0, 0, 15%);
+    top: 9%;
+    left: 51%;
+  }
+  
+  .popUpA{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  }
+  
+
+  
+  .popupBtn {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1rem;
+  }
+  
+  .insideBtn {
+    border-radius: 0.125rem;
+    border: 0.5px solid #000;
+    background: #FFF;
+    width: 4.2rem;
+    height: 1.3rem;
+  }
+  
+  .hotspotA:hover {
+    /* animation-play-state: paused; */
+    transform-origin: center;
+    color: white;
+    background-color: white;
+    border: solid 0.5px white;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  

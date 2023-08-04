@@ -1,18 +1,85 @@
-import * as React from "react";
-import Image from "next/image";
-
+import React, { useState, useEffect } from "react";
+import NextImage from "next/image";
+import styles from "../styles/BranchLamp.module.css";
+import LeafPopup from "./popupInfo/LeafPopup";
+import Link from "next/link";
 
 function BranchLamp() {
+  const images = {
+    off: "/BL_WIDESCREEN_OFF.jpg",
+    on: "/BL_WIDESCREEN_ON.jpg",
+  };
+
+  const [backgroundImage, setBackgroundImage] = useState(images.off);
+  const [showImage, setShowImage] = useState(false);
+  const [showPopUpA, setShowPopUpA] = useState(false); // Separate state for each popup
+
+  const handleHotspotClickA = () => {
+    if (!showPopUpA) {
+      setShowPopUpA(true);
+      setBackgroundImage(images.on);
+    } else {
+      setShowPopUpA(false);
+      setBackgroundImage(images.off);
+    }
+  };
+
+  useEffect(() => {
+    // Preload the images
+    const preloadImages = Object.values(images).map((src) => {
+      const img = new Image();
+      img.src = src;
+      return img;
+    });
+
+    // After preloading, set the initial backgroundImage
+    setBackgroundImage(images.off);
+
+    // Show the component after the images are preloaded
+    setShowImage(true);
+  }, []);
+
+  const handleClosePopUp = () => {
+    setBackgroundImage(images.off);
+    setTimeout(() => {
+      setShowPopUpA(false);
+    }, 200); // Set the delay time to match the fade-out duration
+  };
 
   return (
     <div>
-          <Image
-            src="/GL_WIDESCREEN_OFF.jpg"
-            alt="photo"
-            sizes="(max-height: 1261px) 100vw, 1261px"
-          />
-          Branch Lamp
+      <div
+        className={styles.container}
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          transition:
+            "background-image 0.3s ease-in-out, opacity 0.3s ease-in-out",
+          opacity: showImage ? 1 : 0, // Apply opacity based on showImage state
+          height: "100vh",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <button
+          className={styles.hotspotA}
+          onClick={handleHotspotClickA}
+        ></button>
+
+        <div className={styles.popUpA}>
+          {showPopUpA && (
+            <LeafPopup onClose={handleClosePopUp} popupText="Branch Lamp">
+              <div className={styles.popupBtn}>
+                <Link href="/BranchLampInfo">
+                  <button className={styles.insideBtn}>More</button>
+                </Link>
+                <button className={styles.insideBtn}>Buy</button>
+              </div>
+            </LeafPopup>
+          )}
         </div>
+      </div>
+    </div>
   );
 }
 
