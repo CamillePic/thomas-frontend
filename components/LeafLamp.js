@@ -79,6 +79,10 @@ function LeafLamp() {
 
   return (
     <div className={styles.hotspots}>
+      <NextImage src="GL_WIDESCREEN_OFF.jpg"  className={styles.leaf1} width={1} height={1} />
+      <NextImage src="/GL_WIDESCREEN_MIDDLE.jpg"  className={styles.leaf2} width={1} height={1} />
+      <NextImage src="/GL_WIDESCREEN_LEFT.jpg"  className={styles.leaf3} width={1} height={1} />
+      <NextImage src="/GL_WIDESCREEN_RIGHT.jpg" className={styles.leaf4} width={1} height={1} />
       <div
         className={styles.container}
         style={{
