@@ -4,7 +4,12 @@ import styles from "../styles/LeafLamp.module.css";
 import LeafPopup from "./popupInfo/LeafPopup";
 import Link from "next/link";
 
-
+const images = {
+  off: "/GL_WIDESCREEN_OFF.jpg",
+  left: "/GL_WIDESCREEN_LEFT.jpg",
+  right: "/GL_WIDESCREEN_RIGHT.jpg",
+  middle: "/GL_WIDESCREEN_MIDDLE.jpg",
+};
 
 function LeafLamp() {
   const [backgroundImage, setBackgroundImage] = useState(images.off);
@@ -13,12 +18,7 @@ function LeafLamp() {
   const [showPopUpB, setShowPopUpB] = useState(false);
   const [showPopUpC, setShowPopUpC] = useState(false);
 
-  const images = {
-    off: "/GL_WIDESCREEN_OFF.jpg",
-    left: "/GL_WIDESCREEN_LEFT.jpg",
-    right: "/GL_WIDESCREEN_RIGHT.jpg",
-    middle: "/GL_WIDESCREEN_MIDDLE.jpg",
-  };
+
 
   const handleHotspotClickA = () => {
     if (!showPopUpA) {
