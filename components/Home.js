@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
-import FallingLeavesAnimation from "./FallingLeavesAnimation";
 
 const Home = () => {
   // const [policeBlack, setPoliceBlack] = useState("grey");
