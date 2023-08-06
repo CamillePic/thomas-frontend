@@ -83,7 +83,6 @@
 }
 
 .hotspotA:active {
-  animation-play-state: paused;
   color: white;
   background-color: white;
   border: solid 0.5px rgb(0, 0, 0);
@@ -91,7 +90,6 @@
   height: 2.3rem;
 }
 .hotspotB:active {
-  animation-play-state: paused;
   color: #fff;
   background-color: white;
   border: solid 0.5px rgb(0, 0, 0);
@@ -99,7 +97,6 @@
   height: 2.3rem;
 }
 .hotspotC:active {
-  animation-play-state: paused;
   color: #fff;
   background-color: white;
   border: solid 0.5px rgb(0, 0, 0);
