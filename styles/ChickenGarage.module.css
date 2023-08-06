@@ -47,6 +47,8 @@
     background: #FFF;
     width: 4.2rem;
     height: 1.3rem;
+    text-decoration: none;
+    color: black;
   }
   
   .hotspotA:hover {

@@ -22,7 +22,7 @@
   animation: fader 2s ease infinite;
   transition: all 0.2s;
   color: rgba(0, 0, 0, 15%);
-  border: solid 1px rgb(87, 86, 86);
+  border: solid 1px rgb(131, 130, 130);
   top: 5%;
   left: 69%;
 }
@@ -58,7 +58,7 @@
     animation-play-state: paused;
     color: white;
     background-color: white;
-    border: solid 1px rgb(87, 86, 86);
+    border: solid 1px rgb(131, 130, 130);
     width: 2.3rem;
     height: 2.3rem;
   }
@@ -66,7 +66,7 @@
     animation-play-state: paused;
     color: #fff;
     background-color: white;
-    border: solid 1px rgb(87, 86, 86);
+    border: solid 1px rgb(131, 130, 130);
     width: 2.3rem;
     height: 2.3rem;
   }
@@ -74,7 +74,7 @@
     animation-play-state: paused;
     color: #fff;
     background-color: white;
-    border: solid 1px rgb(87, 86, 86);
+    border: solid 1px rgb(131, 130, 130);
     width: 2.3rem;
     height: 2.3rem;
   }
@@ -84,21 +84,21 @@
 .hotspotA:active {
   color: white;
   background-color: white;
-  border: solid 1px rgb(87, 86, 86);
+  border: solid 1px rgb(131, 130, 130);
   width: 2.3rem;
   height: 2.3rem;
 }
 .hotspotB:active {
   color: #fff;
   background-color: white;
-  border: solid 1px rgb(87, 86, 86);
+  border: solid 1px rgb(131, 130, 130);
   width: 2.3rem;
   height: 2.3rem;
 }
 .hotspotC:active {
   color: #fff;
   background-color: white;
-  border: solid 1px rgb(87, 86, 86);
+  border: solid 1px rgb(131, 130, 130);
   width: 2.3rem;
   height: 2.3rem;
 }
@@ -125,7 +125,7 @@
   animation: fader 2s ease infinite;
   transition: all 0.2s;
   color: rgba(0, 0, 0, 15%);
-  border: solid 1px rgb(87, 86, 86);
+  border: solid 1px rgb(131, 130, 130);
   top: 57%;
   left: 54%;
 }
@@ -142,7 +142,7 @@
   animation: fader 2s ease infinite;
   transition: all 0.2s;
   color: rgba(0, 0, 0, 15%);
-  border: solid 1px rgb(87, 86, 86);
+  border: solid 1px rgb(131, 130, 130);
   right: 50%;
   top: 33%;
   left: 35%;
