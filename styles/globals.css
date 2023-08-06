@@ -17,6 +17,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     animation: myAnim 1s ease 0s 1 normal forwards;
+  overscroll-behavior: none;  
 
 }
 

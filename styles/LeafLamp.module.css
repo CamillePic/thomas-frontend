@@ -14,7 +14,6 @@
 }
 
 .hotspotA {
-  content: "";
   position: absolute;
   width: 2rem;
   height: 2rem;
@@ -23,10 +22,9 @@
   animation: fader 2s ease infinite;
   transition: all 0.2s;
   color: rgba(0, 0, 0, 15%);
+  border: solid 0.5px rgb(0, 0, 0);
   top: 5%;
   left: 69%;
-  border: solid 0.5px rgb(0, 0, 0);
-
 }
 .popUpA,
 .popUpB,
@@ -118,7 +116,7 @@
 
 
 .hotspotB {
-  content: "";
+  /* content: ""; */
   position: absolute;
   width: 2rem;
   height: 2rem;
@@ -127,15 +125,15 @@
   animation: fader 2s ease infinite;
   transition: all 0.2s;
   color: rgba(0, 0, 0, 15%);
+  border: solid 0.5px rgb(0, 0, 0);
   top: 57%;
   left: 54%;
-  border: solid 0.5px rgb(0, 0, 0);
 }
 
 
 
 .hotspotC {
-  content: "";
+  /* content: ""; */
   position: absolute;
   width: 2rem;
   height: 2rem;
