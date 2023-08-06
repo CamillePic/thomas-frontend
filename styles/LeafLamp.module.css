@@ -21,27 +21,29 @@
   animation: fader 2s ease infinite;
   transition: all 0.2s;
   color: rgba(0, 0, 0, 15%);
-  top: 9%;
-  left: 51%;
-}
+  top: 5%;
+  left: 69%;
+  border: solid 0.5px rgb(0, 0, 0);
 
-.popUpA{
-  position: absolute;
-  top: 40%;
-  left: 50%;
 }
-
-.popUpB {
+.popUpA,
+.popUpB,
+.popUpC {
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 50%; /* Set the top position to 50% */
+  left: 50%; /* Set the left position to 50% */ 
+  transform: translate(-50%, -50%); /* Center the pop-up both horizontally and vertically */
 }
 
 .popUpC {
-  position: absolute;
-  top: 65%;
-  left: 50%;
+  top: 70%;
 }
+
+.popUpA {
+  top: 45%;
+}
+
+
 
 .popupBtn {
   display: flex;
@@ -50,6 +52,8 @@
   margin-right: 10%;
   margin-top: 1rem;
 }
+
+
 
 .insideBtn {
   border-radius: 0.125rem;
@@ -63,7 +67,7 @@
   animation-play-state: paused;
   color: white;
   background-color: white;
-  border: solid 0.5px white;
+  border: solid 0.5px rgb(0, 0, 0);
   width: 2.3rem;
   height: 2.3rem;
 }
@@ -81,14 +85,15 @@
   font-family: sans-serif;
   color: rgba(0, 0, 0, 15%);
   top: 57%;
-  left: 51%;
-  border: none;
+  left: 54%;
+  border: solid 0.5px rgb(0, 0, 0);
 }
 
 .hotspotB:hover {
   animation-play-state: paused;
   color: #fff;
   background-color: white;
+  border: solid 0.5px rgb(0, 0, 0);
   width: 2.3rem;
   height: 2.3rem;
 }
@@ -103,16 +108,17 @@
   animation: fader 2s ease infinite;
   transition: all 0.2s;
   color: rgba(0, 0, 0, 15%);
+  border: solid 0.5px rgb(0, 0, 0);
   right: 50%;
-  top: 37%;
-  left: 61%;
-  border: none;
+  top: 33%;
+  left: 35%;
 }
 
 .hotspotC:hover {
   animation-play-state: paused;
   color: #fff;
   background-color: white;
+  border: solid 0.5px rgb(0, 0, 0);
   width: 2.3rem;
   height: 2.3rem;
 }

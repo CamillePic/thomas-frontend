@@ -46,6 +46,8 @@ function BranchLamp() {
     }, 200); // Set the delay time to match the fade-out duration
   };
 
+  BranchLamp.category = "objects";
+  
   return (
     <div>
       <div

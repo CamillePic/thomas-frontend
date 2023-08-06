@@ -1,107 +1,51 @@
-import React, { useState } from "react";
-// import BranchLamp from "./BranchLamp";
-// import CatStuff from "./CatStuff";
-// import LeafLamp from "./LeafLamp";
-// import OllainvilleHouse from "./OllainvilleHouse";
-// import ChickenGarage from "./ChickenGarage";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
-import Menu from "./Menu";
+import FallingLeavesAnimation from "./FallingLeavesAnimation";
 
 const Home = () => {
+  // const [policeBlack, setPoliceBlack] = useState("grey");
 
-
-  // const objects = [
-  //   { name: "Project 01 - Grandpa's Lamp", component: <LeafLamp /> },
-  //   { name: "Project 02 - Branch Lamp", component: <BranchLamp /> },
-  //   { name: "Project 03 - Cat Stuff", component: <CatStuff /> },
-  // ];
-
-  // const spaces = [
-  //   // { name: "Ollainville House", component: <OllainvilleHouse /> },
-  //   { name: "ChickenGarage", component: <ChickenGarage /> },
-  // ];
+  // const handleHotspotClickA = () => {
+  //   if (policeBlack === "grey") {
+  //     setPoliceBlack("black");
+  //   } else {
+  //     setPoliceBlack("grey");
+  //   }
+  // };
+  useEffect(() => {
+    // Start the animation when the component mounts
+    const leaves = document.querySelectorAll('.leaf1, .leaf2');
+    leaves.forEach((leaf, index) => {
+      leaf.style.animationPlayState = 'running';
+    });
+  }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
+      <div className={styles.infoContainer}>
+        <div className={styles.gradient}>
+        <div className={styles.infoTitle} >Architecte DE HMONP</div>
+        <div className={styles.info} >
+          I am an architect and designer based in Paris. I am interested in
+          creating things in connection with nature. Contact me for any
+          projects or feel free to peruse my work.
+          <br></br>
+          <br></br>
+          This website was co-created with Camille Picard.
+        </div>
+        </div>
+      </div>
 
-      <div className={styles.main}>
-        <Menu />
-      <footer className={styles.footer}>instagram <br></br> takadathomas@yahoo.com</footer>
-</div>
+
+      {/* Add more content about the Leaf Lamp here */}
     </div>
   );
 };
 
 export default Home;
 
-
-
-
-// {/* <div className={styles.shop}>
-// {selectedItem && selectedItem.component}
-// </div>
-// <div className={styles.menu}>
-// <h1 className={styles.thomas}>Thomas Takada</h1>
-// <div className={styles.separation}></div>
-// <div>
-//   <h3
-//     className={`${styles.menuHeader} ${
-//       categoryOpen === "objects" ? styles.open : ""
-//     }`}
-//     style={{
-//       fontStyle: selectedType === "objects" && categoryOpen === "objects" ? "italic" : "normal",
-//     }}
-//     onClick={() => toggleCategoryOpen("objects")}
-//   >
-//     {/* Display +/- sign based on the categoryOpen state */}
-//     Objects {categoryOpen === "objects" ? "-" : "+"}
-//   </h3>
-//   {categoryOpen === "objects" &&
-//     objects.map((item, i) => (
-//       <div
-//         key={i}
-//         className={styles.menuItem}
-//         style={{
-//           fontStyle:
-//             selectedItem && selectedItem.name === item.name
-//               ? "italic"
-//               : "normal",
-//         }}
-//         onClick={() => handleItemClick("objects", item)}
-//       >
-//         {item.name}
-//       </div>
-//     ))}
-// </div>
-// <div>
-//   <h3
-//     className={`${styles.menuHeader} ${
-//       categoryOpen === "spaces" ? styles.open : ""
-//     }`}
-//     style={{
-//       fontStyle: selectedType === "spaces" && categoryOpen === "spaces" ? "italic" : "normal",
-//     }}
-//     onClick={() => toggleCategoryOpen("spaces")}
-//   >
-//     {/* Display +/- sign based on the categoryOpen state */}
-//     Spaces {categoryOpen === "spaces" ? "-" : "+"}
-//   </h3>
-//   {categoryOpen === "spaces" &&
-//     spaces.map((item, i) => (
-//       <div
-//         key={i}
-//         className={styles.menuItem}
-//         style={{
-//           fontStyle:
-//             selectedItem && selectedItem.name === item.name
-//               ? "italic"
-//               : "normal",
-//         }}
-//         onClick={() => handleItemClick("spaces", item)}
-//       >
-//         {item.name}
-//       </div>
-//     ))}
-// </div>
-// </div>
-// </div> */}
+// 
+{/* <div className={styles.leavesContainer}> */}
+{/* <img src="/WEBSITE_LEAF.png" alt="Leaf 1" className={styles.leaf1} /> */}
+{/* <img src="/WEBSITE_LEAF.png" alt="Leaf 2" className={styles.leaf2} />
+</div> */}

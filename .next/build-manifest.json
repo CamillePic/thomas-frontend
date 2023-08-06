@@ -20,6 +20,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/LeafLampInfo.js"
     ],
+    "/LeafLampPage": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/LeafLampPage.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

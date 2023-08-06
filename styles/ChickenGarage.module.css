@@ -20,8 +20,9 @@
     animation: fader 2s ease infinite;
     transition: all 0.2s;
     color: rgba(0, 0, 0, 15%);
-    top: 9%;
-    left: 51%;
+    border: solid 0.5px rgb(0, 0, 0);
+    top: 30%;
+    left: 70%;
   }
   
   .popUpA{
@@ -53,7 +54,7 @@
     transform-origin: center;
     color: white;
     background-color: white;
-    border: solid 0.5px white;
+    border: solid 0.5px rgb(0, 0, 0);
     width: 2.3rem;
     height: 2.3rem;
   }

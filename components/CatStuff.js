@@ -23,6 +23,7 @@ function CatStuff() {
     if (!showPopUpA) {
       setShowPopUpA(true);
       setBackgroundImage(images.tree);
+      setShowPopUpB(false);
     } else {
       setShowPopUpA(false);
       setBackgroundImage(images.off);
@@ -39,6 +40,8 @@ function CatStuff() {
       setBackgroundImage(images.off);
     }
   };
+
+
 
   useEffect(() => {
     // Preload the images
@@ -59,9 +62,12 @@ function CatStuff() {
     setBackgroundImage(images.off);
     setTimeout(() => {
       setShowPopUpA(false);
+      setShowPopUpB(false);
     }, 200); // Set the delay time to match the fade-out duration
   };
 
+  CatStuff.category = "objects";
+  CatStuff.path = "/CatStuffPage";
 
   return (
     <div>
@@ -88,7 +94,7 @@ function CatStuff() {
           {showPopUpA && (
             <LeafPopup onClose={handleClosePopUp} popupText="Nenuphar Perch">
               <div className={styles.popupBtn}>
-                <Link href="productsInfo/BranchLampInfo">
+                <Link href="CatStuffTree">
                   <button className={styles.insideBtn}>More</button>
                 </Link>
                 <button className={styles.insideBtn}>Buy</button>
@@ -100,7 +106,7 @@ function CatStuff() {
         {showPopUpB && (
           <LeafPopup onClose={handleClosePopUp} popupText="Pebble Bowl" className={styles.popup}>
             <div className={styles.popupBtn}>
-            <Link href="/LeafLampInfo">
+            <Link href="/CatStuffBowl">
               <button className={styles.insideBtn}>More</button>
             </Link>
             <button className={styles.insideBtn}>Buy</button>
