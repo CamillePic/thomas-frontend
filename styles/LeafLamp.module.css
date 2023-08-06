@@ -14,10 +14,11 @@
 }
 
 .hotspotA {
+  content: "";
   position: absolute;
   width: 2rem;
   height: 2rem;
-  border: none;
+  padding-top: 6px;
   border-radius: 50%;
   animation: fader 2s ease infinite;
   transition: all 0.2s;
@@ -117,16 +118,14 @@
 
 
 .hotspotB {
+  content: "";
   position: absolute;
   width: 2rem;
   height: 2rem;
+  padding-top: 6px;
   border-radius: 50%;
   animation: fader 2s ease infinite;
   transition: all 0.2s;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: sans-serif;
   color: rgba(0, 0, 0, 15%);
   top: 57%;
   left: 54%;
