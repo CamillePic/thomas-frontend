@@ -119,6 +119,9 @@
   left: 54%;
   background-color: transparent;
   border: none;
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
 }
 
 
