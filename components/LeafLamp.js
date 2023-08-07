@@ -107,7 +107,21 @@ function LeafLamp() {
   return (
     <div className={styles.hotspots}>
       <div
-        className={styles.container}
+        // className={styles.container}
+        // style={{
+        //   backgroundImage: `url(${backgroundImage})`,
+        //   transition: "background-image 0.3s ease-in-out, opacity 0.3s ease-in-out",
+        //   opacity: showImage ? 1 : 0, // Apply opacity based on showImage state
+        //   height: "100vh",
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: "no-repeat",
+        //   priority: "true",
+        // }}
+      >
+              <img
+        // className={styles.container}
+        src={backgroundImage}
         style={{
           backgroundImage: `url(${backgroundImage})`,
           transition: "background-image 0.3s ease-in-out, opacity 0.3s ease-in-out",
@@ -116,12 +130,13 @@ function LeafLamp() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
+          priority: "true",
         }}
-      >
-      <NextImage src="/GL_WIDESCREEN_OFF.jpg"   width={1} height={1} />
-      <NextImage src="/GL_WIDESCREEN_MIDDLE.jpg"  width={1} height={1} />
-      <NextImage src="/GL_WIDESCREEN_LEFT.jpg"   width={1} height={1} />
-      <NextImage src="/GL_WIDESCREEN_RIGHT.jpg"  width={1} height={1} />
+      />
+      {/* <NextImage src="/GL_WIDESCREEN_OFF.jpg"   width={1} height={1}  priority={true}/>
+      <NextImage src="/GL_WIDESCREEN_MIDDLE.jpg"  width={1} height={1}  priority={true}/>
+      <NextImage src="/GL_WIDESCREEN_LEFT.jpg"   width={1} height={1}  priority={true}/>
+      <NextImage src="/GL_WIDESCREEN_RIGHT.jpg"  width={1} height={1}  priority={true}/> */}
 
         <button className={styles.hotspotA} onClick={handleHotspotClickA}>
         {pluslessA}
@@ -169,7 +184,6 @@ function LeafLamp() {
           </LeafPopup>
         )}
         </div>
-
       </div>
     </div>
   );
