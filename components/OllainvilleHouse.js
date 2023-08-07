@@ -36,6 +36,8 @@ function OllainvilleHouse() {
       return img;
     });
 
+    //comm
+
     // After preloading, set the initial backgroundImage
     setBackgroundImage(images.off);
 
