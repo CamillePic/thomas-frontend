@@ -1,6 +1,7 @@
 .popup {
     /* transform: translate(-50%, -50%); */
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: none;
     display: flex;
     flex-direction: column;
     width: 13rem;

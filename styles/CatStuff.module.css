@@ -12,12 +12,14 @@
     position: absolute;
     width: 2rem;
     height: 2rem;
-    border: none;
-    border-radius: 50%;
+    padding-top: 6px;
     animation: fader 2s ease infinite;
     transition: all 0.2s;
-    color: rgba(0, 0, 0, 15%);
-    border: solid 0.5px rgb(0, 0, 0);
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
     top: 33%;
     left: 58%;
   }
@@ -51,26 +53,16 @@
     position: absolute;
     width: 2rem;
     height: 2rem;
-    border-radius: 50%;
+    padding-top: 6px;
     animation: fader 2s ease infinite;
     transition: all 0.2s;
-    text-align: center;
+    background-color: transparent;
+    border: none;
     text-decoration: none;
-    font-weight: bold;
-    font-family: sans-serif;
-    color: rgba(0, 0, 0, 15%);
-    border: solid 0.5px rgb(0, 0, 0);
+    color: #000;
+    font-size: 2rem;
     top: 70%;
     left: 70%;
-  }
-  
-  .hotspotB:hover {
-    animation-play-state: paused;
-    color: #fff;
-    border: solid 0.5px rgb(0, 0, 0);
-    background-color: white;
-    width: 2.3rem;
-    height: 2.3rem;
   }
   
   
@@ -90,15 +82,5 @@
     height: 1.3rem;
     text-decoration: none;
     color: black;
-  }
-  
-  .hotspotA:hover {
-    /* animation-play-state: paused; */
-    transform-origin: center;
-    color: white;
-    background-color: white;
-    border: solid 0.5px rgb(0, 0, 0);
-    width: 2.3rem;
-    height: 2.3rem;
   }
   

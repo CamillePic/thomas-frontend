@@ -21,7 +21,66 @@ function LeafLamp() {
   const [showPopUpA, setShowPopUpA] = useState(false); // Separate state for each popup
   const [showPopUpB, setShowPopUpB] = useState(false);
   const [showPopUpC, setShowPopUpC] = useState(false);
-  const [plusless, setPlusless] = useState('+');
+  const [pluslessA, setPluslessA] = useState('+');
+  const [pluslessB, setPluslessB] = useState('+');
+  const [pluslessC, setPluslessC] = useState('+');
+
+
+
+  const handleHotspotClickA = () => {
+    if (!showPopUpA) {
+      setShowPopUpA(true);
+      setBackgroundImage(images.left);
+      setShowPopUpB(false);
+      setShowPopUpC(false);
+      setPluslessA('-')
+
+    } else {
+      setShowPopUpA(false);
+      setBackgroundImage(images.off);
+      setPluslessA('+')
+
+    }
+  };
+
+  const handleHotspotClickB = () => {
+    if (!showPopUpB) {
+      setShowPopUpB(true);
+      setBackgroundImage(images.middle);
+      setShowPopUpA(false);
+      setShowPopUpC(false);
+      setPluslessB('-')
+    } else {
+      setShowPopUpB(false);
+      setBackgroundImage(images.off);
+      setPluslessB('+')
+    }
+  };
+  const handleHotspotClickC = () => {
+    if (!showPopUpC) {
+      setShowPopUpC(true);
+      setBackgroundImage(images.right);
+      setShowPopUpA(false);
+      setShowPopUpB(false);
+      setPluslessC('-')
+
+    } else {
+      setShowPopUpC(false);
+      setBackgroundImage(images.off);
+      setPluslessC('+')
+
+    }
+  };
+
+  const handleClosePopUp = () => {
+    setBackgroundImage(images.off);
+    setTimeout(() => {
+      setShowPopUpA(false);
+      setShowPopUpB(false);
+      setShowPopUpC(false);
+    }, 200); // Set the delay time to match the fade-out duration
+  };
+
 
   useEffect(() => {
     // Preload the images
@@ -37,62 +96,6 @@ function LeafLamp() {
     // Show the component after the images are preloaded
     setShowImage(true);
   }, []);
-
-  const handleHotspotClickA = () => {
-    if (!showPopUpA) {
-      setShowPopUpA(true);
-      setBackgroundImage(images.left);
-      setShowPopUpB(false);
-      setShowPopUpC(false);
-      setPlusless('-')
-
-    } else {
-      setShowPopUpA(false);
-      setBackgroundImage(images.off);
-      setPlusless('+')
-
-    }
-  };
-
-  const handleHotspotClickB = () => {
-    if (!showPopUpB) {
-      setShowPopUpB(true);
-      setBackgroundImage(images.middle);
-      setShowPopUpA(false);
-      setShowPopUpC(false);
-      setPlusless('-')
-    } else {
-      setShowPopUpB(false);
-      setBackgroundImage(images.off);
-      setPlusless('+')
-    }
-  };
-  const handleHotspotClickC = () => {
-    if (!showPopUpC) {
-      setShowPopUpC(true);
-      setBackgroundImage(images.right);
-      setShowPopUpA(false);
-      setShowPopUpB(false);
-      setPlusless('-')
-
-    } else {
-      setShowPopUpC(false);
-      setBackgroundImage(images.off);
-      setPlusless('+')
-
-    }
-  };
-
-  const handleClosePopUp = () => {
-    setBackgroundImage(images.off);
-    setTimeout(() => {
-      setShowPopUpA(false);
-      setShowPopUpB(false);
-      setShowPopUpC(false);
-    }, 200); // Set the delay time to match the fade-out duration
-  };
-
-
 
   return (
     <div className={styles.hotspots}>
@@ -114,14 +117,14 @@ function LeafLamp() {
       <NextImage src="/GL_WIDESCREEN_RIGHT.jpg"  width={1} height={1} />
 
         <button className={styles.hotspotA} onClick={handleHotspotClickA}>
-        {plusless}
+        {pluslessA}
 
         </button>
         <button className={styles.hotspotB} onClick={handleHotspotClickB}>
-          {plusless}
+          {pluslessB}
         </button>
         <button className={styles.hotspotC} onClick={handleHotspotClickC}>
-        {plusless}
+        {pluslessC}
         </button>
         <div className={styles.popUpA}>
         {showPopUpA && (

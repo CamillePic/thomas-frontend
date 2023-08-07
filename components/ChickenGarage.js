@@ -14,14 +14,18 @@ function ChickenGarage() {
   const [backgroundImage, setBackgroundImage] = useState(images.off);
   const [showImage, setShowImage] = useState(false);
   const [showPopUpA, setShowPopUpA] = useState(false); // Separate state for each popup
+  const [pluslessA, setPluslessA] = useState('+');
+
 
   const handleHotspotClickA = () => {
     if (!showPopUpA) {
       setShowPopUpA(true);
       setBackgroundImage(images.on);
+      setPluslessA('-');
     } else {
       setShowPopUpA(false);
       setBackgroundImage(images.off);
+      setPluslessA('+')
     }
   };
 

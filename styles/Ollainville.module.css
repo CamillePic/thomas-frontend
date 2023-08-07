@@ -15,15 +15,16 @@
     position: absolute;
     width: 2rem;
     height: 2rem;
-    border: none;
-    border-radius: 50%;
+    padding-top: 6px;
     animation: fader 2s ease infinite;
     transition: all 0.2s;
-    color: rgba(0, 0, 0, 15%);
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
     top: 20%;
     left: 70%;
-    border: solid 0.5px rgb(0, 0, 0);
-
   }
   
   .popUpA{
@@ -61,40 +62,3 @@
     color: black;
   }
   
-  .hotspotA:active {
-    /* animation-play-state: paused; */
-    transform-origin: center;
-    color: white;
-    background-color: white;
-    border: solid 0.5px rgb(0, 0, 0);
-    width: 2.3rem;
-    height: 2.3rem;
-  }
-  
-  @media only screen and (min-width: 880px) {
-    .hotspotA:hover {
-      animation-play-state: paused;
-      color: white;
-      background-color: white;
-      border: solid 0.5px rgb(0, 0, 0);
-      width: 2.3rem;
-      height: 2.3rem;
-    }
-    .hotspotB:hover {
-      animation-play-state: paused;
-      color: #fff;
-      background-color: white;
-      border: solid 0.5px rgb(0, 0, 0);
-      width: 2.3rem;
-      height: 2.3rem;
-    }
-    .hotspotC:hover {
-      animation-play-state: paused;
-      color: #fff;
-      background-color: white;
-      border: solid 0.5px rgb(0, 0, 0);
-      width: 2.3rem;
-      height: 2.3rem;
-    }
-  
-  }

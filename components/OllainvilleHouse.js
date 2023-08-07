@@ -14,14 +14,17 @@ function OllainvilleHouse() {
   const [backgroundImage, setBackgroundImage] = useState(images.off);
   const [showImage, setShowImage] = useState(false);
   const [showPopUpA, setShowPopUpA] = useState(false); // Separate state for each popup
+  const [pluslessA, setPluslessA] = useState('+');
 
   const handleHotspotClickA = () => {
     if (!showPopUpA) {
       setShowPopUpA(true);
       setBackgroundImage(images.on);
+      setPluslessA('-');
     } else {
       setShowPopUpA(false);
       setBackgroundImage(images.off);
+      setPluslessA('+');
     }
   };
 
@@ -66,7 +69,9 @@ function OllainvilleHouse() {
         <button
           className={styles.hotspotA}
           onClick={handleHotspotClickA}
-        ></button>
+        >
+          {pluslessA}
+        </button>
 
         <div className={styles.popUpA}>
           {showPopUpA && (

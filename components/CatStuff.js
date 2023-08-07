@@ -17,6 +17,8 @@ function CatStuff() {
   const [showImage, setShowImage] = useState(false);
   const [showPopUpA, setShowPopUpA] = useState(false); // Separate state for each popup
   const [showPopUpB, setShowPopUpB] = useState(false);
+  const [pluslessA, setPluslessA] = useState('+');
+  const [pluslessB, setPluslessB] = useState('+');
 
 
   const handleHotspotClickA = () => {
@@ -24,9 +26,11 @@ function CatStuff() {
       setShowPopUpA(true);
       setBackgroundImage(images.tree);
       setShowPopUpB(false);
+      setPluslessA('-')
     } else {
       setShowPopUpA(false);
       setBackgroundImage(images.off);
+      setPluslessA('+')
     }
   };
 
@@ -35,12 +39,13 @@ function CatStuff() {
       setShowPopUpB(true);
       setBackgroundImage(images.bowl);
       setShowPopUpA(false);
+      setPluslessB('-')
     } else {
       setShowPopUpB(false);
       setBackgroundImage(images.off);
+      setPluslessB('+')
     }
   };
-
 
 
   useEffect(() => {
@@ -87,8 +92,12 @@ function CatStuff() {
         <button
           className={styles.hotspotA}
           onClick={handleHotspotClickA}
-        ></button>
-        <button className={styles.hotspotB} onClick={handleHotspotClickB}></button>
+        >
+          {pluslessA}
+        </button>
+        <button className={styles.hotspotB} onClick={handleHotspotClickB}>
+          {pluslessB}
+        </button>
 
         <div className={styles.popUpA}>
           {showPopUpA && (
