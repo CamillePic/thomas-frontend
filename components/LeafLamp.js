@@ -105,11 +105,16 @@ function LeafLamp() {
       <NextImage src="/GL_WIDESCREEN_LEFT.jpg"   width={1} height={1} />
       <NextImage src="/GL_WIDESCREEN_RIGHT.jpg"  width={1} height={1} />
 
-        <button className={styles.hotspotA} onClick={handleHotspotClickA}></button>
+        <button className={styles.hotspotA} onClick={handleHotspotClickA}>
+        {plusless}
+
+        </button>
         <button className={styles.hotspotB} onClick={handleHotspotClickB}>
           {plusless}
         </button>
-        <button className={styles.hotspotC} onClick={handleHotspotClickC}></button>
+        <button className={styles.hotspotC} onClick={handleHotspotClickC}>
+        {plusless}
+        </button>
         <div className={styles.popUpA}>
         {showPopUpA && (
           <LeafPopup onClose={handleClosePopUp} popupText="Size L (~80cm)" >
