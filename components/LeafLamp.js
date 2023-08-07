@@ -127,6 +127,7 @@ function LeafLamp() {
           transition: "background-image 0.3s ease-in-out, opacity 0.3s ease-in-out",
           opacity: showImage ? 1 : 0, // Apply opacity based on showImage state
           height: "100vh",
+          width: 'auto',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
