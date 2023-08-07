@@ -4,21 +4,39 @@ import styles from "../styles/LeafLamp.module.css";
 import LeafPopup from "./popupInfo/LeafPopup";
 import Link from "next/link";
 
-const images = {
-  off: "/GL_WIDESCREEN_OFF.jpg",
-  left: "/GL_WIDESCREEN_LEFT.jpg",
-  right: "/GL_WIDESCREEN_RIGHT.jpg",
-  middle: "/GL_WIDESCREEN_MIDDLE.jpg",
-};
+
 
 function LeafLamp() {
+
+  const images = {
+    off: "/GL_WIDESCREEN_OFF.jpg",
+    left: "/GL_WIDESCREEN_LEFT.jpg",
+    right: "/GL_WIDESCREEN_RIGHT.jpg",
+    middle: "/GL_WIDESCREEN_MIDDLE.jpg",
+  };
+
+
   const [backgroundImage, setBackgroundImage] = useState(images.off);
   const [showImage, setShowImage] = useState(false);
   const [showPopUpA, setShowPopUpA] = useState(false); // Separate state for each popup
   const [showPopUpB, setShowPopUpB] = useState(false);
   const [showPopUpC, setShowPopUpC] = useState(false);
+  const [plusless, setPlusless] = useState('+');
 
+  useEffect(() => {
+    // Preload the images
+    const preloadImages = Object.values(images).map((src) => {
+      const img = new Image();
+      img.src = src;
+      return img;
+    });
 
+    // After preloading, set the initial backgroundImage
+    setBackgroundImage(images.off);
+
+    // Show the component after the images are preloaded
+    setShowImage(true);
+  }, []);
 
   const handleHotspotClickA = () => {
     if (!showPopUpA) {
@@ -38,9 +56,11 @@ function LeafLamp() {
       setBackgroundImage(images.middle);
       setShowPopUpA(false);
       setShowPopUpC(false);
+      setPlusless('-')
     } else {
       setShowPopUpB(false);
       setBackgroundImage(images.off);
+      setPlusless('+')
     }
   };
   const handleHotspotClickC = () => {
@@ -64,20 +84,7 @@ function LeafLamp() {
     }, 200); // Set the delay time to match the fade-out duration
   };
 
-  useEffect(() => {
-    // Preload the images
-    const preloadImages = Object.values(images).map((src) => {
-      const img = new Image();
-      img.src = src;
-      return img;
-    });
 
-    // After preloading, set the initial backgroundImage
-    setBackgroundImage(images.off);
-
-    // Show the component after the images are preloaded
-    setShowImage(true);
-  }, []);
 
   return (
     <div className={styles.hotspots}>
@@ -93,13 +100,15 @@ function LeafLamp() {
           backgroundRepeat: "no-repeat",
         }}
       >
-      <NextImage src="GL_WIDESCREEN_OFF.jpg"  className={styles.leaf1} width={1} height={1} />
-      <NextImage src="/GL_WIDESCREEN_MIDDLE.jpg"  className={styles.leaf2} width={1} height={1} />
-      <NextImage src="/GL_WIDESCREEN_LEFT.jpg"  className={styles.leaf3} width={1} height={1} />
-      <NextImage src="/GL_WIDESCREEN_RIGHT.jpg" className={styles.leaf4} width={1} height={1} />
+      <NextImage src="/GL_WIDESCREEN_OFF.jpg"   width={1} height={1} />
+      <NextImage src="/GL_WIDESCREEN_MIDDLE.jpg"  width={1} height={1} />
+      <NextImage src="/GL_WIDESCREEN_LEFT.jpg"   width={1} height={1} />
+      <NextImage src="/GL_WIDESCREEN_RIGHT.jpg"  width={1} height={1} />
 
         <button className={styles.hotspotA} onClick={handleHotspotClickA}></button>
-        <button className={styles.hotspotB} onClick={handleHotspotClickB}></button>
+        <button className={styles.hotspotB} onClick={handleHotspotClickB}>
+          {plusless}
+        </button>
         <button className={styles.hotspotC} onClick={handleHotspotClickC}></button>
         <div className={styles.popUpA}>
         {showPopUpA && (
