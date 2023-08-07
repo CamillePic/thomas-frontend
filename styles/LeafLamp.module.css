@@ -6,7 +6,12 @@
   transition: background-image 1s ease;
   opacity: 0;
   transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
-  /* overflow: hidden; */
+ height: 100vh;
+ width: auto;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .hotspots {
