@@ -120,7 +120,7 @@ function LeafLamp() {
         // }}
       >
               <img
-        // className={styles.container}
+        className={styles.container}
         src={backgroundImage}
         style={{
           backgroundImage: `url(${backgroundImage})`,
