@@ -119,7 +119,7 @@ function LeafLamp() {
           priority: "true",
         }}
       >
-
+        
       {/* <NextImage src="/GL_WIDESCREEN_OFF.jpg"   width={1} height={1}  priority={true}/>
       <NextImage src="/GL_WIDESCREEN_MIDDLE.jpg"  width={1} height={1}  priority={true}/>
       <NextImage src="/GL_WIDESCREEN_LEFT.jpg"   width={1} height={1}  priority={true}/>
@@ -171,6 +171,7 @@ function LeafLamp() {
           </LeafPopup>
         )}
         </div>
+
       </div>
     </div>
   );
