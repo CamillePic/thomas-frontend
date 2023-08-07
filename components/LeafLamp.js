@@ -44,9 +44,13 @@ function LeafLamp() {
       setBackgroundImage(images.left);
       setShowPopUpB(false);
       setShowPopUpC(false);
+      setPlusless('-')
+
     } else {
       setShowPopUpA(false);
       setBackgroundImage(images.off);
+      setPlusless('+')
+
     }
   };
 
@@ -69,9 +73,13 @@ function LeafLamp() {
       setBackgroundImage(images.right);
       setShowPopUpA(false);
       setShowPopUpB(false);
+      setPlusless('-')
+
     } else {
       setShowPopUpC(false);
       setBackgroundImage(images.off);
+      setPlusless('+')
+
     }
   };
 
