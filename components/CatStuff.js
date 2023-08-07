@@ -27,6 +27,7 @@ function CatStuff() {
       setBackgroundImage(images.tree);
       setShowPopUpB(false);
       setPluslessA('-')
+      setPluslessB('+')
     } else {
       setShowPopUpA(false);
       setBackgroundImage(images.off);
@@ -40,6 +41,7 @@ function CatStuff() {
       setBackgroundImage(images.bowl);
       setShowPopUpA(false);
       setPluslessB('-')
+      setPluslessA('+')
     } else {
       setShowPopUpB(false);
       setBackgroundImage(images.off);

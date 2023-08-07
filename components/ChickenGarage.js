@@ -70,7 +70,9 @@ function ChickenGarage() {
         <button
           className={styles.hotspotA}
           onClick={handleHotspotClickA}
-        ></button>
+        >
+          {pluslessA}
+        </button>
 
         <div className={styles.popUpA}>
           {showPopUpA && (

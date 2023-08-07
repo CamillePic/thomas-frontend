@@ -33,7 +33,9 @@ function LeafLamp() {
       setBackgroundImage(images.left);
       setShowPopUpB(false);
       setShowPopUpC(false);
-      setPluslessA('-')
+      setPluslessA('-');
+      setPluslessC('+')
+      setPluslessB('+')
 
     } else {
       setShowPopUpA(false);
@@ -50,6 +52,9 @@ function LeafLamp() {
       setShowPopUpA(false);
       setShowPopUpC(false);
       setPluslessB('-')
+      setPluslessA('+')
+      setPluslessC('+')
+
     } else {
       setShowPopUpB(false);
       setBackgroundImage(images.off);
@@ -63,6 +68,8 @@ function LeafLamp() {
       setShowPopUpA(false);
       setShowPopUpB(false);
       setPluslessC('-')
+      setPluslessB('+')
+      setPluslessA('+')
 
     } else {
       setShowPopUpC(false);
