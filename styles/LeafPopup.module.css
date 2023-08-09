@@ -4,14 +4,13 @@
     background-color: none;
     display: flex;
     flex-direction: column;
-    width: 13rem;
+    width: auto;
     height: 7rem;
     opacity: 0.9;
     font-family: 'Open Sans';
     text-align: center;
     justify-content: center;
     font-weight: 100 !important;
-    border: solid 0.5px black;
     border-radius: 0.25rem;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 
@@ -20,7 +19,7 @@
   @media only screen and (max-width: 420px) {
     .popup {
       /* transform: translate(-50%, -50%); */
-      background-color: #fff;
+      background-color: transparent;
       display: flex;
       flex-direction: column;
       width: 11.5rem;
@@ -31,7 +30,6 @@
       text-align: center;
       justify-content: center;
       font-weight: 100 !important;
-      border: solid 0.5px black;
       border-radius: 0.25rem;
       /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
   

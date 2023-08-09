@@ -15,19 +15,20 @@
 .hotspotA {
   font-family: 'EB Garamond', regular;
   font-weight: 100;
-  position: absolute;
   width: 3rem;
   height: 3rem;
+  position: absolute;
+  top: 5%; /* Set the top position to 50% */
+  left: 69%; /* Set the left position to 50% */
   animation: fader 2s ease infinite;
   transition: all 0.2s;
-  top: 5%;
-  left: 69%;
   background-color: transparent;
   border: none;
   text-decoration: none;
   color: #000;
   font-size: 2rem;
 }
+
 .popUpA,
 .popUpB,
 .popUpC {
@@ -37,36 +38,27 @@
   transform: translate(-50%, -50%); /* Center the pop-up both horizontally and vertically */
 }
 
+
 .popUpC {
   top: 70%;
 }
 
-.popUpA {
-  top: 45%;
-}
+
 
 
 
 .popupBtn {
   display: flex;
-  justify-content: space-around;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 1rem;
+  justify-content: left;
 }
-
-
 
 .insideBtn {
-  border-radius: 0.125rem;
-  border: 1px solid #000;
-  background: #FFF;
-  width: 4.3rem;
-  height: 1.3rem;
-  text-decoration: none;
-  color: #000;
+  border: none;
+  background: transparent;
+  margin-top: 5%;
+  text-decoration: underline;
+  color: #000;  
 }
-
 
 
 .hotspotB {

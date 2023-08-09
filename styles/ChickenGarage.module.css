@@ -34,23 +34,18 @@
     left: 50%;
   }
   
-
-  
   .popupBtn {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 1rem;
   }
   
   .insideBtn {
-    border-radius: 0.125rem;
-    border: 0.5px solid #000;
-    background: #FFF;
-    width: 4.2rem;
-    height: 1.3rem;
-    text-decoration: none;
-    color: black;
+    border: none;
+    background: transparent;
+    margin: 2%;
+    width: 2rem;
+    text-decoration: underline;
+    color: #000;  
   }
-

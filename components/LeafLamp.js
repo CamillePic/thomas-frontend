@@ -124,16 +124,17 @@ function LeafLamp() {
       <NextImage src="/GL_WIDESCREEN_MIDDLE.jpg"  width={1} height={1}  priority={true}/>
       <NextImage src="/GL_WIDESCREEN_LEFT.jpg"   width={1} height={1}  priority={true}/>
       <NextImage src="/GL_WIDESCREEN_RIGHT.jpg"  width={1} height={1}  priority={true}/> */}
+     
 
-        <button className={styles.hotspotA} onClick={handleHotspotClickA}>
-        {pluslessA}
-
-        </button>
         <button className={styles.hotspotB} onClick={handleHotspotClickB}>
           {pluslessB}
         </button>
         <button className={styles.hotspotC} onClick={handleHotspotClickC}>
         {pluslessC}
+        </button>
+        <div className={styles.content}>
+        <button className={styles.hotspotA} onClick={handleHotspotClickA}>
+        {pluslessA}
         </button>
         <div className={styles.popUpA}>
         {showPopUpA && (
@@ -146,6 +147,7 @@ function LeafLamp() {
             </div>
           </LeafPopup>
         )}
+        </div>
         </div>
         <div className={styles.popUpB}>
         {showPopUpB && (
