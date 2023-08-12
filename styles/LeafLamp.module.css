@@ -15,11 +15,6 @@
 .hotspotA {
   font-family: 'EB Garamond', regular;
   font-weight: 100;
-  width: 3rem;
-  height: 3rem;
-  position: absolute;
-  top: 5%; /* Set the top position to 50% */
-  left: 69%; /* Set the left position to 50% */
   animation: fader 2s ease infinite;
   transition: all 0.2s;
   background-color: transparent;
@@ -29,73 +24,90 @@
   font-size: 2rem;
 }
 
-.popUpA,
-.popUpB,
-.popUpC {
+.hotspotB {
+  font-family: 'EB Garamond', regular;
+  font-weight: 100;
+  animation: fader 2s ease infinite;
+  transition: all 0.2s;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+}
+
+.hotspotC {
+  font-family: 'EB Garamond', regular;
+  font-weight: 100;
+  animation: fader 2s ease infinite;
+  transition: all 0.2s;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+}
+
+.contentA {
+  /* border: solid 1px #000; */
+  width: fit-content;
+  height: fit-content;
   position: absolute;
-  top: 50%; /* Set the top position to 50% */
-  left: 50%; /* Set the left position to 50% */ 
-  transform: translate(-50%, -50%); /* Center the pop-up both horizontally and vertically */
+  top: 5%; /* Set the top position to 50% */
+  left: 60%; /* Set the left position to 50% */
 }
 
 
-.popUpC {
-  top: 70%;
+.contentB {
+  /* border: solid 1px #000; */
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 40%; /* Set the top position to 50% */
+  left: 50%; /* Set the left position to 50% */
 }
 
-
-
-
+.contentC {
+  /* border: solid 1px #000; */
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 27%; /* Set the top position to 50% */
+  left: 35%; /* Set the left position to 50% */
+}
 
 .popupBtn {
   display: flex;
   justify-content: left;
+  /* border: solid 1px #000; */
+  margin-left: 0;
 }
 
 .insideBtn {
   border: none;
   background: transparent;
   margin-top: 5%;
+  margin-left: 0;
   text-decoration: underline;
   color: #000;  
 }
 
 
-.hotspotB {
-  font-family: 'EB Garamond', regular;
-  font-weight: 100;
-  position: absolute;
-  width: 3rem;
-  height: 3rem;
-  animation: fader 2s ease infinite;
-  transition: all 0.2s;
-  top: 57%;
-  left: 54%;
-  background-color: transparent;
-  border: none;
-  text-decoration: none;
-  color: #000;
-  font-size: 2rem;
-}
-
-
-
-
-.hotspotC {
-  font-family: 'EB Garamond', regular;
-  font-weight: 100;
-  position: absolute;
-  width: 3rem;
-  height: 3rem;
-  animation: fader 2s ease infinite;
-  transition: all 0.2s;
-  top: 33%;
-  left: 35%;
-  background-color: transparent;
-  border: none;
-  text-decoration: none;
-  color: #000;
-  font-size: 2rem;
+@media only screen and (max-width: 1300px) {
+  .popupBtn {
+    display: flex;
+    justify-content: right;
+    /* border: solid 1px #000; */
+    margin-left: 0;
+  }
+  .contentA {
+    /* border: solid 1px #000; */
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 5%; /* Set the top position to 50% */
+    left: 72%; /* Set the left position to 50% */
+  }
 }
 
 
