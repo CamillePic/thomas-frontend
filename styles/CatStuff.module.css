@@ -9,11 +9,8 @@
   
 
   .hotspotA {
-    font-family: 'EB Garamond', regular;
+    font-family: "EB Garamond", regular;
     font-weight: 100;
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
     animation: fader 2s ease infinite;
     transition: all 0.2s;
     background-color: transparent;
@@ -21,23 +18,13 @@
     text-decoration: none;
     color: #000;
     font-size: 2rem;
-    top: 33%;
-    left: 58%;
+    margin-bottom: 1rem;
+
   }
   
-  .popUpA{
-    position: absolute;
-    top: 33%;
-    left: 58%;
-  }
 
-  .popUpB {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-  }
 
-  @media only screen and (min-width: 500px) {
+  /* @media only screen and (min-width: 500px) {
     .popUpA{
       position: absolute;
       top: 40%;
@@ -48,14 +35,11 @@
       top: 50%;
       left: 60%;
     }
-  }
+  } */
   
   .hotspotB {
-    font-family: 'EB Garamond', regular;
+    font-family: "EB Garamond", regular;
     font-weight: 100;
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
     animation: fader 2s ease infinite;
     transition: all 0.2s;
     background-color: transparent;
@@ -63,24 +47,49 @@
     text-decoration: none;
     color: #000;
     font-size: 2rem;
-    top: 70%;
+    margin-bottom: 1rem;
+  }
+
+  .contentB {
+    /* border: solid 1px #000; */
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 65%;
     left: 70%;
+
+  }
+
+  .contentA {
+    /* border: solid 1px #000; */
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 33%; /* Set the top position to 50% */
+    left: 58%; /* Set the left position to 50% */
   }
   
   .popupBtn {
     display: flex;
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    justify-content: left;
+    /* border: solid 1px #000; */
+    margin-left: 0;
   }
   
   .insideBtn {
     border: none;
     background: transparent;
-    margin: 2%;
-    width: 2rem;
+    margin-top: 5%;
+    margin-left: 0;
     text-decoration: underline;
-    color: #000;  
+    color: #000;
   }
 
-  
+  @media only screen and (max-width: 1300px) {
+    .popupBtn {
+      display: flex;
+      justify-content: right;
+      /* border: solid 1px #000; */
+      margin-left: 0;
+    }
+  }

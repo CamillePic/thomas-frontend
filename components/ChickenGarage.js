@@ -5,7 +5,6 @@ import LeafPopup from "./popupInfo/LeafPopup";
 import Link from "next/link";
 
 function ChickenGarage() {
-
   const images = {
     off: "/CG_WIDESCREEN_ROOFOFF.jpg",
     on: "/CG_WIDESCREEN_ROOFON.jpg",
@@ -14,18 +13,17 @@ function ChickenGarage() {
   const [backgroundImage, setBackgroundImage] = useState(images.off);
   const [showImage, setShowImage] = useState(false);
   const [showPopUpA, setShowPopUpA] = useState(false); // Separate state for each popup
-  const [pluslessA, setPluslessA] = useState('+');
-
+  const [pluslessA, setPluslessA] = useState("+");
 
   const handleHotspotClickA = () => {
     if (!showPopUpA) {
       setShowPopUpA(true);
       setBackgroundImage(images.on);
-      setPluslessA('-');
+      setPluslessA("-");
     } else {
       setShowPopUpA(false);
       setBackgroundImage(images.off);
-      setPluslessA('+')
+      setPluslessA("+");
     }
   };
 
@@ -51,7 +49,6 @@ function ChickenGarage() {
     }, 200); // Set the delay time to match the fade-out duration
   };
 
-
   return (
     <div>
       <div
@@ -67,27 +64,25 @@ function ChickenGarage() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <button
-          className={styles.hotspotA}
-          onClick={handleHotspotClickA}
-        >
-          {pluslessA}
-        </button>
+        <div className={styles.contentA}>
+          <button className={styles.hotspotA} onClick={handleHotspotClickA}>
+            {pluslessA}
+          </button>
 
-        <div className={styles.popUpA}>
-          {showPopUpA && (
-            <LeafPopup onClose={handleClosePopUp} popupText="Chicken Garage">
-              <div className={styles.popupBtn}>
-                <Link href="/ChickenGarageInfo">
-                  <button className={styles.insideBtn}>More</button>
-                </Link>
-              </div>
-            </LeafPopup>
-          )}
+          <div className={styles.popUpA}>
+            {showPopUpA && (
+              <LeafPopup onClose={handleClosePopUp} popupText="Chicken Garage">
+                <div className={styles.popupBtn}>
+                  <Link href="/ChickenGarageInfo">
+                    <button className={styles.insideBtn}>More</button>
+                  </Link>
+                </div>
+              </LeafPopup>
+            )}
+          </div>
         </div>
       </div>
-
-        </div>
+    </div>
   );
 }
 

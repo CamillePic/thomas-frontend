@@ -1,8 +1,8 @@
 .container {
   height: 100vh;
   background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat;   
+  background-position: center;
+  background-repeat: no-repeat;
   transition: background-image 1s ease;
   opacity: 0;
   transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
@@ -13,7 +13,7 @@
 }
 
 .hotspotA {
-  font-family: 'EB Garamond', regular;
+  font-family: "EB Garamond", regular;
   font-weight: 100;
   animation: fader 2s ease infinite;
   transition: all 0.2s;
@@ -22,10 +22,11 @@
   text-decoration: none;
   color: #000;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .hotspotB {
-  font-family: 'EB Garamond', regular;
+  font-family: "EB Garamond", regular;
   font-weight: 100;
   animation: fader 2s ease infinite;
   transition: all 0.2s;
@@ -34,10 +35,11 @@
   text-decoration: none;
   color: #000;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .hotspotC {
-  font-family: 'EB Garamond', regular;
+  font-family: "EB Garamond", regular;
   font-weight: 100;
   animation: fader 2s ease infinite;
   transition: all 0.2s;
@@ -46,6 +48,7 @@
   text-decoration: none;
   color: #000;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .contentA {
@@ -56,7 +59,6 @@
   top: 5%; /* Set the top position to 50% */
   left: 60%; /* Set the left position to 50% */
 }
-
 
 .contentB {
   /* border: solid 1px #000; */
@@ -89,9 +91,8 @@
   margin-top: 5%;
   margin-left: 0;
   text-decoration: underline;
-  color: #000;  
+  color: #000;
 }
-
 
 @media only screen and (max-width: 1300px) {
   .popupBtn {
@@ -109,5 +110,3 @@
     left: 72%; /* Set the left position to 50% */
   }
 }
-
-

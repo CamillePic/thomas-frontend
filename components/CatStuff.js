@@ -4,9 +4,7 @@ import styles from "../styles/CatStuff.module.css";
 import LeafPopup from "./popupInfo/LeafPopup";
 import Link from "next/link";
 
-
 function CatStuff() {
-
   const images = {
     off: "/CS_WIDESCREEN_OFF.jpg",
     tree: "/CS_WIDESCREEN_TREE.jpg",
@@ -17,21 +15,20 @@ function CatStuff() {
   const [showImage, setShowImage] = useState(false);
   const [showPopUpA, setShowPopUpA] = useState(false); // Separate state for each popup
   const [showPopUpB, setShowPopUpB] = useState(false);
-  const [pluslessA, setPluslessA] = useState('+');
-  const [pluslessB, setPluslessB] = useState('+');
-
+  const [pluslessA, setPluslessA] = useState("+");
+  const [pluslessB, setPluslessB] = useState("+");
 
   const handleHotspotClickA = () => {
     if (!showPopUpA) {
       setShowPopUpA(true);
       setBackgroundImage(images.tree);
       setShowPopUpB(false);
-      setPluslessA('-')
-      setPluslessB('+')
+      setPluslessA("-");
+      setPluslessB("+");
     } else {
       setShowPopUpA(false);
       setBackgroundImage(images.off);
-      setPluslessA('+')
+      setPluslessA("+");
     }
   };
 
@@ -40,15 +37,14 @@ function CatStuff() {
       setShowPopUpB(true);
       setBackgroundImage(images.bowl);
       setShowPopUpA(false);
-      setPluslessB('-')
-      setPluslessA('+')
+      setPluslessB("-");
+      setPluslessA("+");
     } else {
       setShowPopUpB(false);
       setBackgroundImage(images.off);
-      setPluslessB('+')
+      setPluslessB("+");
     }
   };
-
 
   useEffect(() => {
     // Preload the images
@@ -91,43 +87,46 @@ function CatStuff() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <button
-          className={styles.hotspotA}
-          onClick={handleHotspotClickA}
-        >
-          {pluslessA}
-        </button>
-        <button className={styles.hotspotB} onClick={handleHotspotClickB}>
-          {pluslessB}
-        </button>
-
-        <div className={styles.popUpA}>
-          {showPopUpA && (
-            <LeafPopup onClose={handleClosePopUp} popupText="Nenuphar Perch">
-              <div className={styles.popupBtn}>
-                <Link href="CatStuffTree">
-                  <button className={styles.insideBtn}>More</button>
-                </Link>
-                <button className={styles.insideBtn}>Buy</button>
-              </div>
-            </LeafPopup>
-          )}
+        <div className={styles.contentA}>
+          <button className={styles.hotspotA} onClick={handleHotspotClickA}>
+            {pluslessA}
+          </button>
+          <div className={styles.popUpA}>
+            {showPopUpA && (
+              <LeafPopup onClose={handleClosePopUp} popupText="Nenuphar Perch">
+                <div className={styles.popupBtn}>
+                  <Link href="CatStuffTree">
+                    <button className={styles.insideBtn}>More</button>
+                  </Link>
+                  <button className={styles.insideBtn}>Buy</button>
+                </div>
+              </LeafPopup>
+            )}
+          </div>
         </div>
-        <div className={styles.popUpB}>
-        {showPopUpB && (
-          <LeafPopup onClose={handleClosePopUp} popupText="Pebble Bowl" className={styles.popup}>
-            <div className={styles.popupBtn}>
-            <Link href="/CatStuffBowl">
-              <button className={styles.insideBtn}>More</button>
-            </Link>
-            <button className={styles.insideBtn}>Buy</button>
-            </div>
-          </LeafPopup>
-        )}
+        <div className={styles.contentB}>
+          <button className={styles.hotspotB} onClick={handleHotspotClickB}>
+            {pluslessB}
+          </button>
+          <div className={styles.popUpB}>
+            {showPopUpB && (
+              <LeafPopup
+                onClose={handleClosePopUp}
+                popupText="Pebble Bowl"
+                className={styles.popup}
+              >
+                <div className={styles.popupBtn}>
+                  <Link href="/CatStuffBowl">
+                    <button className={styles.insideBtn}>More</button>
+                  </Link>
+                  <button className={styles.insideBtn}>Buy</button>
+                </div>
+              </LeafPopup>
+            )}
+          </div>
         </div>
-
       </div>
-        </div>
+    </div>
   );
 }
 

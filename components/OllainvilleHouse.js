@@ -67,6 +67,7 @@ function OllainvilleHouse() {
           backgroundRepeat: "no-repeat",
         }}
       >
+        <div className={styles.contentA}>
         <button
           className={styles.hotspotA}
           onClick={handleHotspotClickA}
@@ -84,6 +85,7 @@ function OllainvilleHouse() {
               </div>
             </LeafPopup>
           )}
+        </div>
         </div>
       </div>
 

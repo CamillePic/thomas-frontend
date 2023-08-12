@@ -67,6 +67,8 @@ function BranchLamp() {
           backgroundRepeat: "no-repeat",
         }}
       >
+                <div className={styles.contentA}>
+
         <button
           className={styles.hotspotA}
           onClick={handleHotspotClickA}
@@ -85,6 +87,7 @@ function BranchLamp() {
               </div>
             </LeafPopup>
           )}
+        </div>
         </div>
       </div>
     </div>
