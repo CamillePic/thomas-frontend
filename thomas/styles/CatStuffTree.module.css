@@ -1,0 +1,114 @@
+.container {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 30% repeat(2, auto);
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  @media only screen and (min-width: 880px) {
+    .container {
+      grid-template-columns: 30% 40% 30%;
+      grid-template-rows: 20% repeat(2, auto);
+      height: 100vh;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .menu {
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
+    }
+  }
+  
+  .infoContainer {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  .info {
+    margin-top: 2%;
+  }
+  .infoTitle {
+    font-family: "EB Garamond";
+    font-weight: 300;
+    font-size: 18px;
+  }
+  
+  .gallery {
+    margin-top: 10%;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageOne {
+    object-fit: cover;
+    width: 50%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+  
+  .imageTwo {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+  
+  .imageThree {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+  
+  .imageFour {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+  
+  .imageFive {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+  
+  .imageSix {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+  
+  
+  .imageItem {
+    width: calc(
+      40%
+    ); /* Adjust this value based on the number of images you want per row */
+    height: auto;
+  }
+  
