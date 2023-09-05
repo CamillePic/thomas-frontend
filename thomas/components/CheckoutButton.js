@@ -70,6 +70,7 @@
 const handleCheckoutClick = async () => {
   try {
     const stripe = await stripePromise;
+    const stripePromise = loadStripe(`${process.env.pk_live_51NfPvRBBUlEBHPZ69PMpBScseRd8th2nIxnboO5XRF7aDKboEltVP69kgY160E8uh9jIySQ0zuimwewCTLBMFbNe00OA8WEaGn}`);
 
     const productIds = Object.keys(cartDetails); // Get product IDs from cartDetails
 
