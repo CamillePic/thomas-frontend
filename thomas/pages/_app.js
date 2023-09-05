@@ -3,6 +3,7 @@ import Head from 'next/head';
 import React from "react";
 import Menu from "../components/Menu";
 import { CartProvider } from 'use-shopping-cart';
+import { loadStripe } from '@stripe/stripe-js';
 
 function App({ Component, pageProps }) {
   return (
@@ -23,5 +24,6 @@ function App({ Component, pageProps }) {
 }
 
 export default App;
+
 
 

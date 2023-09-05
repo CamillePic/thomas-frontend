@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Menu from "../components/Menu";
 import styles from "../styles/BranchLampInfo.module.css";
+import Link from "next/link";
 
 const BranchLampInfo = () => {
   return (
@@ -27,7 +28,7 @@ const BranchLampInfo = () => {
         <img src="/gallery/BL_GALLERY_2.jpg" className={styles.imageTwo} />
         <img src="/gallery/BL_GALLERY_3.jpg" className={styles.imageThree} />
       </div>
-<a href="352377c03fdda0f7e1f32faec54fbd91f93aa932">buy</a>
+
       {/* Add more content about the Leaf Lamp here */}
     </div>
   );

@@ -2,22 +2,31 @@
 import { useShoppingCart } from "use-shopping-cart";
 import CartItem from "./CartItem";
 import CheckoutButton from "./CheckoutButton";
+import { useState, useEffect } from "react";
 
 export default function ShoppingCart() {
-  const { shouldDisplayCart, cartCount, cartDetails } = useShoppingCart();
+  const { shouldDisplayCart, cartDetails } = useShoppingCart();
+  const [cartCount, setCartCount] = useState(Object.keys(cartDetails).length);
 
-  const handleSubmit = async () => {
-    // Create a POST request to your API handler with cartDetails
-    const response = await fetch("/api/checkout_sessions", {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ cartDetails }),
-    });
+  // Update the cart count whenever cartDetails change
+  // useEffect(() => {
+  //   setCartCount(Object.keys(cartDetails).length);
+  // }, [cartDetails]);
+
+  // const handleSubmit = async () => {
+  //   // Create a POST request to your API handler with cartDetails
+  //   const response = await fetch('/api/checkout_sessions', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({ cartDetails }),
+  //   });
 
     // Process the response or redirect the user to the Stripe payment page
-  };
+  // };
+
+
 
   return (
     <div>
@@ -32,7 +41,7 @@ export default function ShoppingCart() {
               <CartItem key={entry.id} item={entry} />
             ))}
             {/* Pass cartDetails to CheckoutButton component */}
-            <CheckoutButton cartDetails={cartDetails} />
+            <CheckoutButton />
           </>
         ) : (
           <div className="p-5">You have no items in your cart</div>

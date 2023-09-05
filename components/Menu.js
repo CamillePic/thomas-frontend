@@ -1,131 +1,20 @@
-// import React, { useState, useEffect } from "react";
-// import styles from "../styles/Menu.module.css";
-// import ActiveLink from "./ActiveLink";
-// import { useRouter } from "next/router";
-
-// const Menu = () => {
-//   const [categoryOpen, setCategoryOpen] = useState(null);
-//   const router = useRouter();
-//   const currentPath = router.asPath;
-
-//   const objects = [
-//     { name: "Grandpa's Lamp", path: "/LeafLampPage", secondPath: "/LeafLampInfo", type: "objects" },
-//     { name: "Branch Lamp", path: "/BranchLampPage", secondPath: "/BranchLampInfo", type: "objects" },
-//     { name: "Cat Stuff", path: "/CatStuffPage", secondPath: "/CatStuffInfo", type: "objects" },
-//   ];
-
-//   const spaces = [
-//     { name: "Ollainville House", path: "/OllainVilleHousePage", secondPath: "/OllainvilleHouseInfo", type: "spaces" },
-//     { name: "ChickenGarage", path: "/ChickenGaragePage", secondPath: "/ChickenGarageInfo", type: "spaces" },
-//   ];
-
-//   useEffect(() => {
-//     // Check if the current path matches any of the items in objects or spaces
-//     const foundCategory = objects.find((item) => currentPath.startsWith(item.path) || currentPath.startsWith(item.secondPath));
-//     if (!foundCategory) {
-//       const foundSpace = spaces.find((item) => currentPath.startsWith(item.path) || currentPath.startsWith(item.secondPath));
-//       if (foundSpace) {
-//         setCategoryOpen(foundSpace.type);
-//       }
-//     } else {
-//       setCategoryOpen(foundCategory.type);
-//     }
-//   }, [currentPath]);
-
-//   const toggleCategoryOpen = (type) => {
-//     setCategoryOpen((prev) => (prev === type ? null : type));
-//   };
-
-//   const isItemActive = (item) => {
-//     return currentPath === item.path || currentPath === item.secondPath;
-//   };
-
-//   const handleHomeClick = () => {
-//     router.push("/");
-//   };
-  
-//   return (
-//     <div>
-//       <div className={styles.main}>
-//         <div className={styles.menu}>
-//           <h1 className={styles.thomas} onClick={handleHomeClick}>Thomas Takada</h1>
-//           <div className={styles.separation}></div>
-//           <div className={`${styles.menuContainer} ${styles.menuVisible}`}>
-//             <div>
-//               <h3
-//                 className={`${styles.menuHeader} ${
-//                   categoryOpen === "objects" ? styles.open : ""
-//                 }`}
-//                 onClick={() => toggleCategoryOpen("objects")}
-//               >
-//                 {/* Display +/- sign based on the categoryOpen state */}
-//                 Objects {categoryOpen === "objects" ? "-" : "+"}
-//               </h3>
-//               {categoryOpen === "objects" && (
-//                 <ul className={styles.nav}>
-//                   {objects.map((item, i) => (
-//                     <li key={i}>
-//                       <ActiveLink
-//                         activeClassName={styles.menuItemActive} // Add your CSS class for active link here
-//                         href={item.path}
-//                       >
-//                         <a className={isItemActive(item) ? styles.menuItemActive : styles.navlink}>
-//                           {item.name}
-//                         </a>
-//                       </ActiveLink>
-//                     </li>
-//                   ))}
-//                 </ul>
-//               )}
-//             </div>
-//             <div>
-//               <h3
-//                 className={`${styles.menuHeader} ${
-//                   categoryOpen === "spaces" ? styles.open : ""
-//                 }`}
-//                 onClick={() => toggleCategoryOpen("spaces")}
-//               >
-//                 {/* Display +/- sign based on the categoryOpen state */}
-//                 Spaces {categoryOpen === "spaces" ? "-" : "+"}
-//               </h3>
-//               {categoryOpen === "spaces" && (
-//                 <ul className={styles.nav}>
-//                   {spaces.map((item, i) => (
-//                     <li key={i}>
-//                       <ActiveLink
-//                         activeClassName={styles.menuItemActive} // Add your CSS class for active link here
-//                         href={item.path}
-//                       >
-//                         <a className={isItemActive(item) ? styles.menuItemActive : styles.navlink}>
-//                           {item.name}
-//                         </a>
-//                       </ActiveLink>
-//                     </li>
-//                   ))}
-//                 </ul>
-//               )}
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Menu;
-
-
 import React, { useState, useEffect } from "react";
 import styles from "../styles/Menu.module.css";
 import ActiveLink from "./ActiveLink";
 import { useRouter } from "next/router";
 import { FaArrowCircleUp } from "react-icons/fa";
+import { useShoppingCart } from "use-shopping-cart";
+import ShoppingCart from "./ShoppingCart";
+import Image from "next/image";
+import { products } from "../data/products";
+// import { cartItems } from "../data/cartItems";
 
 const Menu = () => {
   const [categoryOpen, setCategoryOpen] = useState(null);
   const router = useRouter();
   const currentPath = router.asPath;
 
+  const { totalPrice, redirectToCheckout, cartCount, handleCartClick } = useShoppingCart();
 
   const objects = [
     { name: "Grandpa's Lamp", path: "/LeafLampPage", secondPath: "/LeafLampInfo", type: "objects" },
@@ -270,7 +159,19 @@ const Menu = () => {
 
 
             </div>
-
+<h3>Cart</h3>
+<button className="relative" onClick={() => handleCartClick()}>
+        {/* <Image
+          // src="./cart.svg"
+          width={40}
+          height={40}
+          alt="shopping cart icon"
+        /> */}
+        <div className="rounded-full flex justify-center items-center bg-emerald-500 text-xs text-white absolute w-6 h-5 bottom-6 -right-1">
+          {cartCount}
+        </div>
+      </button>
+      <ShoppingCart />
           </div>
           
         </div>

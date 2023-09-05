@@ -2,6 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/LeafLampPage": "pages/LeafLampPage.js"
+  "/api/checkout_sessions": "pages/api/checkout_sessions.js",
+  "/CatStuffPage": "pages/CatStuffPage.js",
+  "/LeafLampPage": "pages/LeafLampPage.js",
+  "/LeafLampInfo": "pages/LeafLampInfo.js"
 }

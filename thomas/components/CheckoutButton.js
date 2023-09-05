@@ -1,13 +1,12 @@
-// CheckoutButton.js
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useShoppingCart } from 'use-shopping-cart';
 import { loadStripe } from '@stripe/stripe-js';
 import { useRouter } from 'next/router';
 
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+const stripePromise = loadStripe(`${process.env.pk_live_51NfPvRBBUlEBHPZ69PMpBScseRd8th2nIxnboO5XRF7aDKboEltVP69kgY160E8uh9jIySQ0zuimwewCTLBMFbNe00OA8WEaGn}`);
 
-export default function CheckoutButton({ cartDetails }) {
-  const { cartCount } = useShoppingCart();
+export default function CheckoutButton() {
+  const { cartCount, cartDetails } = useShoppingCart();
   const router = useRouter();
 
   const redirectToStripeCheckout = async () => {
@@ -43,18 +42,22 @@ export default function CheckoutButton({ cartDetails }) {
     }
   };
 
+  // Remove the useEffect and trigger the Stripe Checkout directly when the button is clicked
+  const handleCheckoutClick = async () => {
+    redirectToStripeCheckout();
+  };
+
+  // Prevent the default form submission behavior
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <article className="mt-3 flex flex-col">
-      <form
-        action="/api/checkout_sessions"
-        method="POST"
-        // onSubmit={(e) => {
-        //   e.preventDefault(); // Prevent the form from submitting
-        //   redirectToStripeCheckout(); // Call the function when the form is submitted
-        // }}
-      >
+      {/* Add an onClick handler to initiate checkout */}
+      <form onSubmit={handleSubmit}>
         <section>
-          <button type="submit" role="link">
+          <button type="submit" role="link" onClick={handleCheckoutClick}>
             Checkout
           </button>
         </section>
