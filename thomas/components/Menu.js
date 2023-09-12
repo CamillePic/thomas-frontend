@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { FaArrowCircleUp } from "react-icons/fa";
 import Image from "next/image";
 import { products } from "../data/products";
+// import { cartItems } from "../data/cartItems";
 
 const Menu = () => {
   const [categoryOpen, setCategoryOpen] = useState(null);
@@ -155,6 +156,19 @@ const Menu = () => {
 
 
             </div>
+{/* <h3>Cart</h3>
+<button className="relative" onClick={() => handleCartClick()}> */}
+        {/* <Image
+          // src="./cart.svg"
+          width={40}
+          height={40}
+          alt="shopping cart icon"
+        /> */}
+        {/* <div className="rounded-full flex justify-center items-center bg-emerald-500 text-xs text-white absolute w-6 h-5 bottom-6 -right-1">
+          {cartCount}
+        </div>
+      </button> */}
+      {/* <ShoppingCart /> */}
           </div>
           
         </div>

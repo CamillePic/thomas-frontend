@@ -138,14 +138,13 @@ function LeafLamp() {
             {showPopUpB && (
               <LeafPopup
                 onClose={handleClosePopUp}
-                popupText="Size S (~20cm)"
                 className={styles.popup}
               >
-                <div className={styles.popupBtn}>
+                <div className={styles.popupBtnB}>
+                <p>Medim Grandpas's Lamp (~75cm)<br></br>A lamp where nature is not only decorative but essential... </p>
                   <Link href="/LeafLampInfo">
-                    <button className={styles.insideBtn}>More</button>
+                    <button className={styles.insideBtn}>See more</button>
                   </Link>
-                  <button className={styles.insideBtn}>Buy</button>
                 </div>
               </LeafPopup>
             )}
