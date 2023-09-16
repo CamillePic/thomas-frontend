@@ -78,12 +78,14 @@ function BranchLamp() {
 
         <div className={styles.popUpA}>
           {showPopUpA && (
-            <LeafPopup onClose={handleClosePopUp} popupText="Branch Lamp">
-              <div className={styles.popupBtn}>
+            <LeafPopup onClose={handleClosePopUp} >
+              <div className={styles.popupBtnA}>
+                <p>Branch Lamp</p>
+                <p> simple floor lamp held up by a branch... 
                 <Link href="/BranchLampInfo">
-                  <button className={styles.insideBtn}>More</button>
+                  <button className={styles.insideBtn}>See more</button>
                 </Link>
-                <button className={styles.insideBtn}>Buy</button>
+                </p>
               </div>
             </LeafPopup>
           )}

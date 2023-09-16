@@ -119,12 +119,13 @@ function LeafLamp() {
           </button>
           <div className={styles.popUpA}>
             {showPopUpA && (
-              <LeafPopup onClose={handleClosePopUp} popupText="Size L (~80cm)">
-                <div className={styles.popupBtn}>
+              <LeafPopup onClose={handleClosePopUp} >
+                <div className={styles.popupBtnA}>
+                <p>Large Grandpas's Lamp (130cm)</p><p>A lamp where nature is not only decorative but essential... 
                   <Link href="/LeafLampInfo">
-                    <button className={styles.insideBtn}>More</button>
+                    <button className={styles.insideBtn}>See more</button>
                   </Link>
-                  <button className={styles.insideBtn}>Buy</button>
+                  </p>
                 </div>
               </LeafPopup>
             )}
@@ -141,10 +142,11 @@ function LeafLamp() {
                 className={styles.popup}
               >
                 <div className={styles.popupBtnB}>
-                <p>Medim Grandpas's Lamp (~75cm)<br></br>A lamp where nature is not only decorative but essential... </p>
+                <p>Small Grandpas's Lamp (50cm)</p><p>A lamp where nature is not only decorative but essential... 
                   <Link href="/LeafLampInfo">
                     <button className={styles.insideBtn}>See more</button>
                   </Link>
+                  </p>
                 </div>
               </LeafPopup>
             )}
@@ -158,14 +160,14 @@ function LeafLamp() {
             {showPopUpC && (
               <LeafPopup
                 onClose={handleClosePopUp}
-                popupText="Size M (~50cm)"
                 className={styles.popup}
               >
-                <div className={styles.popupBtn}>
+                <div className={styles.popupBtnC}>
+                <p>Medium Grandpas's Lamp (75cm)</p><p>A lamp where nature is not only decorative but essential... 
                   <Link href="/LeafLampInfo">
-                    <button className={styles.insideBtn}>More</button>
+                    <button className={styles.insideBtn}>See more</button>
                   </Link>
-                  <button className={styles.insideBtn}>Buy</button>
+                  </p>
                 </div>
               </LeafPopup>
             )}

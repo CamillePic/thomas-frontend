@@ -93,12 +93,14 @@ function CatStuff() {
           </button>
           <div className={styles.popUpA}>
             {showPopUpA && (
-              <LeafPopup onClose={handleClosePopUp} popupText="Nenuphar Perch">
-                <div className={styles.popupBtn}>
+              <LeafPopup onClose={handleClosePopUp} >
+                <div className={styles.popupBtnA}>
+                  <p>Nenuphar Perch</p>
+                  <p>A minimalist and poetic cat tree entirely made in France... 
                   <Link href="CatStuffTree">
-                    <button className={styles.insideBtn}>More</button>
+                    <button className={styles.insideBtn}>See more</button>
                   </Link>
-                  <button className={styles.insideBtn}>Buy</button>
+                  </p>
                 </div>
               </LeafPopup>
             )}
@@ -112,14 +114,15 @@ function CatStuff() {
             {showPopUpB && (
               <LeafPopup
                 onClose={handleClosePopUp}
-                popupText="Pebble Bowl"
                 className={styles.popup}
               >
-                <div className={styles.popupBtn}>
+                <div className={styles.popupBtnB}>
+                  <p>Pebble Bowl</p>
+                  <p>A bowl, like a pebble, seemingly sculpted by water...
                   <Link href="/CatStuffBowl">
-                    <button className={styles.insideBtn}>More</button>
+                    <button className={styles.insideBtn}>See more</button>
                   </Link>
-                  <button className={styles.insideBtn}>Buy</button>
+                  </p>
                 </div>
               </LeafPopup>
             )}

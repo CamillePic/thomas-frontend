@@ -22,40 +22,39 @@
     color: #000;
     font-size: 2rem;
     margin-bottom: 1rem;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 35%; /* Set the top position to 50% */
+    left: 70%;
   }
   
 
   
-.contentA {
-  /* border: solid 1px #000; */
-  width: fit-content;
-  height: fit-content;
+
+.popupBtnA {
   position: absolute;
-  top: 35%; /* Set the top position to 50% */
-  left: 70%;
+  top: 90%; /* Set the top position to 50% */
+  left: 10%; /* Set the left position to 50% */
+  font-size: 14px;
+  width: fit-content;
+
 }
-  
-  .popupBtn {
-    display: flex;
-    justify-content: left;
-    /* border: solid 1px #000; */
-    margin-left: 0;
+@media only screen and (min-width: 880px) {
+  .popupBtnA {
+    position: absolute;
+    top: 88%; /* Set the top position to 50% */
+    left: 2%; /* Set the left position to 50% */
+    font-size: 16px;
+    width: fit-content;
   }
+  }
+
   
   .insideBtn {
     border: none;
     background: transparent;
-    margin: 2%;
-    width: 2rem;
     text-decoration: underline;
     color: #000;  
   }
 
-  @media only screen and (max-width: 1300px) {
-    .popupBtn {
-      display: flex;
-      justify-content: right;
-      /* border: solid 1px #000; */
-      margin-left: 0;
-    }
-  }

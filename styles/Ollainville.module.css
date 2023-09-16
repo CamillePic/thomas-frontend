@@ -22,50 +22,34 @@
     color: #000;
     font-size: 2rem;
     margin-bottom: 1rem;
-
-  }
-  
-  .contentA {
-    /* border: solid 1px #000; */
     width: fit-content;
     height: fit-content;
     position: absolute;
-    top: 20%; /* Set the top position to 50% */
-    left: 70%; /* Set the left position to 50% */
+    top: 20%; 
+    left: 70%; 
   }
   
-
-  /* @media only screen and (min-width: 600px) {
-
-    .popUpA{
-      top: 50%;
-      left: 75%;
-      transform: translate(-50%, -50%);
+  .popupBtnA {
+    position: absolute;
+    top: 90%; 
+    left: 10%; 
+    font-size: 14px;
+    width: fit-content;
   
+  }
+  @media only screen and (min-width: 880px) {
+    .popupBtnA {
+      position: absolute;
+      top: 90%; 
+      left: 2%; 
+      font-size: 16px;
+      width: fit-content;
     }
-  } */
-  
-  .popupBtn {
-    display: flex;
-    justify-content: left;
-    /* border: solid 1px #000; */
-    margin-left: 0;
-  }
+    }
   
   .insideBtn {
     border: none;
     background: transparent;
-    margin-top: 5%;
-    margin-left: 0;
     text-decoration: underline;
     color: #000;
-  }
-
-  @media only screen and (max-width: 1300px) {
-    .popupBtn {
-      display: flex;
-      justify-content: right;
-      /* border: solid 1px #000; */
-      margin-left: 0;
-    }
   }

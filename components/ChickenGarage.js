@@ -71,11 +71,13 @@ function ChickenGarage() {
 
           <div className={styles.popUpA}>
             {showPopUpA && (
-              <LeafPopup onClose={handleClosePopUp} popupText="Chicken Garage">
-                <div className={styles.popupBtn}>
+              <LeafPopup onClose={handleClosePopUp} >
+                <div className={styles.popupBtnA}>
+                  <p>Chicken Garage...
                   <Link href="/ChickenGarageInfo">
-                    <button className={styles.insideBtn}>More</button>
+                    <button className={styles.insideBtn}>See more</button>
                   </Link>
+                  </p>
                 </div>
               </LeafPopup>
             )}

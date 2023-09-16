@@ -23,6 +23,11 @@
   color: #000;
   font-size: 2rem;
   margin-bottom: 1rem;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 5%; /* Set the top position to 50% */
+  left: 60%; /* Set the left position to 50% */
 }
 
 
@@ -35,19 +40,14 @@
   border: none;
   text-decoration: none;
   color: #000;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   width: fit-content;
   height: fit-content;
   position: absolute;
   top: 50%; /* Set the top position to 50% */
-  left: 20%; /* Set the left position to 50% */
-  width: 150%;
-
+  left: 50%; /* Set the left position to 50% */
 }
-
-
-
 
 
 .hotspotC {
@@ -61,49 +61,68 @@
   color: #000;
   font-size: 2rem;
   margin-bottom: 1rem;
-}
-
-.contentA {
-  /* border: solid 1px #000; */
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 5%; /* Set the top position to 50% */
-  left: 60%; /* Set the left position to 50% */
+  top: 27%; 
+  left: 40%; 
 }
 
 
-
-.contentC {
-  /* border: solid 1px #000; */
-  width: fit-content;
-  height: fit-content;
-  position: absolute;
-  top: 27%; /* Set the top position to 50% */
-  left: 35%; /* Set the left position to 50% */
-}
-
-.popupBtn {
-  display: flex;
-  justify-content: left;
-  /* border: solid 1px #000; */
-  margin-left: 0;
-}
 
 .popupBtnB {
   position: absolute;
-  top: 82%; /* Set the top position to 50% */
+  top: 90%; /* Set the top position to 50% */
   left: 10%; /* Set the left position to 50% */
+  font-size: 14px;
+  width: fit-content;
 
 }
 @media only screen and (min-width: 880px) {
   .popupBtnB {
     position: absolute;
-    top: 82%; /* Set the top position to 50% */
+    top: 88%; /* Set the top position to 50% */
     left: 2%; /* Set the left position to 50% */
+    font-size: 16px;
+    width: fit-content;
+  }
+  }
+  .popupBtnC {
+    position: absolute;
+    top: 90%; /* Set the top position to 50% */
+    left: 10%; /* Set the left position to 50% */
+    font-size: 14px;
+    width: fit-content;
   
   }
-  }
+  @media only screen and (min-width: 880px) {
+    .popupBtnC {
+      position: absolute;
+      top: 88%; /* Set the top position to 50% */
+      left: 2%; /* Set the left position to 50% */
+      font-size: 16px;
+      width: fit-content;
+    }
+    }
+
+    .popupBtnA {
+      position: absolute;
+      top: 90%; /* Set the top position to 50% */
+      left: 10%; /* Set the left position to 50% */
+      font-size: 14px;
+      width: fit-content;
+    
+    }
+    @media only screen and (min-width: 880px) {
+      .popupBtnA {
+        position: absolute;
+        top: 88%; /* Set the top position to 50% */
+        left: 2%; /* Set the left position to 50% */
+        font-size: 16px;
+        width: fit-content;
+      }
+      }
+
 
 .insideBtn {
   border: none;
@@ -112,21 +131,4 @@
   margin-left: 0;
   text-decoration: underline;
   color: #000;
-}
-
-@media only screen and (max-width: 1300px) {
-  .popupBtn {
-    display: flex;
-    justify-content: right;
-    /* border: solid 1px #000; */
-    margin-left: 0;
-  }
-  .contentA {
-    /* border: solid 1px #000; */
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    top: 5%; /* Set the top position to 50% */
-    left: 72%; /* Set the left position to 50% */
-  }
 }

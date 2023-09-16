@@ -43,8 +43,4 @@ const Home = () => {
 
 export default Home;
 
-// 
-{/* <div className={styles.leavesContainer}> */}
-{/* <img src="/WEBSITE_LEAF.png" alt="Leaf 1" className={styles.leaf1} /> */}
-{/* <img src="/WEBSITE_LEAF.png" alt="Leaf 2" className={styles.leaf2} />
-</div> */}
+
