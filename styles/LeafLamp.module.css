@@ -26,8 +26,8 @@
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 5%; /* Set the top position to 50% */
-  left: 60%; /* Set the left position to 50% */
+  top: 10%; /* Set the top position to 50% */
+  left: 80%; /* Set the left position to 50% */
 }
 
 
@@ -45,7 +45,7 @@
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 50%; /* Set the top position to 50% */
+  top: 47%; /* Set the top position to 50% */
   left: 50%; /* Set the left position to 50% */
 }
 
@@ -72,7 +72,7 @@
 
 .popupBtnB {
   position: absolute;
-  top: 90%; /* Set the top position to 50% */
+  top: 85%; /* Set the top position to 50% */
   left: 10%; /* Set the left position to 50% */
   font-size: 14px;
   width: fit-content;
@@ -89,7 +89,7 @@
   }
   .popupBtnC {
     position: absolute;
-    top: 90%; /* Set the top position to 50% */
+    top: 85%; /* Set the top position to 50% */
     left: 10%; /* Set the left position to 50% */
     font-size: 14px;
     width: fit-content;
@@ -107,7 +107,7 @@
 
     .popupBtnA {
       position: absolute;
-      top: 90%; /* Set the top position to 50% */
+      top: 85%; /* Set the top position to 50% */
       left: 10%; /* Set the left position to 50% */
       font-size: 14px;
       width: fit-content;
