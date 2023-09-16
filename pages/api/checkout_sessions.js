@@ -1,71 +1,78 @@
-// const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+
+// const stripe = require("stripe")(`${process.env.STRIPE_SECRET_KEY}`);
 
 // export default async function handler(req, res) {
-//   if (req.method === "POST") {
+  
+//   if (req.method === 'POST') {
 //     try {
-//       // Retrieve the cart items from the request body
-//       const { cartItems } = req.body;
+//       const { cartDetails } = req.body;
 
-//       // Create an array of line_items based on the cart items
-//       const line_items = cartItems.map((item) => ({
-//         price: item.price_id, // Replace with the correct price ID for your products
-//         quantity: item.quantity,
-//       }));
+//       // Create Checkout Sessions from body params.
+//            console.log('====================================');
+//       console.log("cartDetails in CheckoutSess:", cartDetails);
+//       console.log('====================================');
 
-//       // Create a session with the line_items
-//       const session = await stripe.checkout.sessions.create({
+//       // Check if cartDetails is available and not empty
+//       // if (!cartDetails || Object.keys(cartDetails).length === 0) {
+//       //   throw new Error("Cart is empty");
+//       // }
+
+//       console.log('====================================');
+//       console.log("cartDetails in CheckoutSess AFTER:", cartDetails);
+//       console.log('====================================');
+
+//       console.log('====================================');
+//       console.log("keys", Object.keys(cartDetails).map((item) => ({ price: item, quantity: cartDetails[item].quantity })));
+//       console.log('====================================');
+      
+//       const session = await stripe.checkout.sessions.create({ 
+        
 //         payment_method_types: ["card"],
-//         line_items,
+//         line_items: Object.keys(cartDetails).map((item) => ({
+//           price: item, // Use the item key (price_id) directly
+//           quantity: cartDetails[item].quantity, // Access quantity directly
+//         })),
 //         mode: "payment",
-//         success_url: `${process.env.BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
-//         cancel_url: `${process.env.BASE_URL}/cancel`,
+//         success_url: `${req.headers.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+//         cancel_url: `${req.headers.origin}/cancel`,
 //       });
 
-//       // Redirect the user to the Stripe Checkout page
 //       res.redirect(303, session.url);
 //     } catch (err) {
-//       console.error(err);
 //       res.status(err.statusCode || 500).json(err.message);
 //     }
 //   } else {
-//     res.setHeader("Allow", "POST");
-//     res.status(405).end("Method Not Allowed");
+//     res.setHeader('Allow', 'POST');
+//     res.status(405).end('Method Not Allowed');
 //   }
 // }
 
 
-// Import required libraries and set up Stripe
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`);
 
 export default async function handler(req, res) {
+
+
   if (req.method === 'POST') {
     try {
-      const { cartDetails } = req.body;
+      const { productIds } = req.body;
 
-      console.log('====================================');
-      console.log(Object.keys(cartDetails))
-      console.log('====================================');
-      // console.log('====================================');
-      // console.log("price", cartDetails[item].price_id);
-      // console.log('====================================');
+      // Fetch prices corresponding to the product IDs from your database or Stripe
+      const prices = await getPricesForProductIds(productIds);
 
-      if (!cartDetails) {
-        throw new Error('Cart is empty');
-      }
-
-      // Create Checkout Session
+      // Create a Checkout Session with the selected prices
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
-        line_items: Object.keys(cartDetails).map((item) => ({
-          price: item, // Use the item key (price_id) directly
-          quantity: cartDetails[item].quantity, // Access quantity directly
+        line_items: prices.map((price) => ({
+          price: price.id,
+          quantity: 1, // You can adjust quantity as needed
         })),
         mode: 'payment',
         success_url: `${req.headers.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
-        cancel_url: `${req.headers.origin}/cancel`,
+        cancel_url: `localhost:3000/`,
       });
 
-      res.status(200).json({ sessionId: session.id });
+      res.status(200).json({ sessionId: session.id, url: session.url });
     } catch (err) {
       res.status(err.statusCode || 500).json(err.message);
     }
@@ -75,3 +82,9 @@ export default async function handler(req, res) {
   }
 }
 
+// Helper function to get prices for product IDs
+async function getPricesForProductIds(productIds) {
+  // Fetch prices based on the product IDs from your database or Stripe
+  // Example: You can query your database or use Stripe's API to get prices
+  // and return an array of price objects.
+}

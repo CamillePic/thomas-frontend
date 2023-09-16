@@ -1,44 +1,14 @@
 import React, { useState } from "react";
 import styles from "../styles/LeafLampInfo.module.css";
-import { useShoppingCart } from "use-shopping-cart";
 import { products } from "../data/products";
 
 const LeafLampInfo = () => {
   // Define the product ID you want to find
-  const productIdToFind = "price_1NfQ8fBBUlEBHPZ6MAOhYZej"; // Replace with the correct ID
-
-  // Use the find method to find the product by its ID
-  const product = products.find((p) => p.id === productIdToFind);
-
-  const { addItem } = useShoppingCart();
-  const [quantity, setQuantity] = useState(1);
-
-  const decreaseQuantity = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
-
-  const increaseQuantity = () => {
-    setQuantity(quantity + 1);
-  };
-
-  const addToCart = () => {
-    addItem(product, { count: quantity });
-    setQuantity(1);
-  };
 
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
         <div className={styles.infoTitle}>Grandpa's Lamp</div>
-        <div>
-          <button onClick={decreaseQuantity}>-</button>
-          <span>{quantity}</span>
-          <button onClick={increaseQuantity}>+</button>
-        </div>
-        <button onClick={addToCart}>Add to Cart</button>
-
         <div className={styles.info}>
           These lamps are about our relationship with nature. The natural
           elements are not only decorative but structural and essential to the
