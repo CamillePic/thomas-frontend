@@ -142,7 +142,7 @@ function LeafLamp() {
                 className={styles.popup}
               >
                 <div className={styles.popupBtnB}>
-                <p>Small Grandpas's Lamp (50cm)</p><p>A lamp where nature is not only decorative but essential... 
+                <p className={styles.highlight}>Small Grandpas's Lamp (50cm)</p><p>A lamp where nature is not only decorative but essential... 
                   <Link href="/LeafLampInfo">
                     <button className={styles.insideBtn}>See more</button>
                   </Link>

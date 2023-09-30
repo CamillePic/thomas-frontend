@@ -75,6 +75,8 @@
   top: 85%; /* Set the top position to 50% */
   left: 10%; /* Set the left position to 50% */
   font-size: 14px;
+  background-color: #c6c5c15b;
+
 
 }
 @media only screen and (min-width: 880px) {
@@ -129,3 +131,4 @@
   text-decoration: underline;
   color: #000;
 }
+
