@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 8% 84% 8%;
     grid-template-rows: 30% repeat(2, auto);
     height: 100vh;
     width: 100%;
@@ -8,10 +8,6 @@
     margin: 0;
   }
 
-  .menu {
-    grid-column: 2 / 2;
-    grid-row: 1 / 2;
-  }
 
   @media only screen and (min-width: 880px) {
     .container {
@@ -41,6 +37,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    margin-top: 8%;
   }
 
   .info {

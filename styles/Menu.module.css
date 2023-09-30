@@ -59,7 +59,7 @@
     font-weight: 400;
     position: fixed;
     top: 0;
-    left: 10%;
+    left: 8%;
     width: 40%;
     z-index: 999; 
     transition: opacity 0.3s;
@@ -114,10 +114,7 @@
   }
 
 
-  
 
-  
-  /* Add other styles as needed */
 
   .thomas {
     cursor: pointer;
