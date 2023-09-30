@@ -59,7 +59,6 @@
   }
 
   .popupBtnA {
-    width: 90%;
     position: fixed;
     top: 85%; /* Set the top position to 50% */
     left: 5%; /* Set the left position to 50% */
@@ -67,7 +66,7 @@
   
   }
     .popupBtnB {
-      width: 90%;
+      width: 80%;
       position: fixed;
       top: 85%; /* Set the top position to 50% */
       left: 5%; /* Set the left position to 50% */

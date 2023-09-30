@@ -117,7 +117,7 @@ function CatStuff() {
                 <div className={styles.popupBtnB}>
                   <p>Pebble Bowl</p>
                   <p>
-                    A bowl, like a pebble, seemingly sculpted by water..
+                    A bowl, like a pebble, seemingly sculpted by water...
                     <Link href="/Cat-Stuff-Bowl">
                       <button className={styles.insideBtn}>See more</button>
                     </Link>
