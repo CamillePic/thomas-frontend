@@ -1,8 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Menu from "../components/Menu";
 import styles from "../styles/CatStuffTree.module.css";
+import Inrequire from "./popupInfo/Inrequire";
 
 const CatStuffTree = () => {
+
+  const [showPopUp, setShowPopUp] = useState(false); // Separate state for each popup
+
+  const handlePopup = () => {
+    if (!showPopUp) {
+      setShowPopUp(true);
+    } else {
+      setShowPopUp(false);
+    }
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
@@ -19,7 +31,17 @@ const CatStuffTree = () => {
           composante a été sourcé en France pour limiter l’empreinte carbone et
           encourager les filières locales.
         </div>
-        <button className={styles.buyBtn}>buy</button>
+        <button className={styles.buyBtn}>
+        {showPopUp && (
+              <Inrequire onClose={handlePopup} >
+                <div className={styles.popupBtnA}>
+                  <p>Require more information</p>
+                  <p>mail form</p>
+                </div>
+              </Inrequire>
+            )}
+          Require more information
+          </button>
       </div>
       <div className={styles.gallery}>
       <img src="/gallery/CS_GALLERY_TREE_1.png" className={styles.imageOne} />
