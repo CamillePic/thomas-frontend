@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Menu from "../components/Menu";
 import styles from "../styles/CatStuffBowl.module.css";
+import Link from "next/link";
 
 const CatStuffBowl = () => {
   return (
@@ -8,7 +9,7 @@ const CatStuffBowl = () => {
       <div className={styles.infoContainer}>
         <div className={styles.infoTitle}>Pebble Bowl</div>
         <div className={styles.info}>
-          Enameled ceramic <br></br>La grande majorité des meubles pour chats sont
+          Enameled ceramic<br></br><span>50€</span><p></p>La grande majorité des meubles pour chats sont
           inesthétiques, de mauvaise qualité et fabriqués en masse dans des pays
           lointains. Nous avons voulu créer du mobilier poétique, de manière
           artisanale, en France. Prenant le point de vue d’un chat, les plantes
@@ -19,11 +20,10 @@ const CatStuffBowl = () => {
           été sourcé en France pour limiter l’empreinte carbone et encourager
           les filières locales.{" "}
         </div>
-        <div className={styles.optionsBtn}>
-        <button className={styles.buyBtn}>Buy in black</button>
-        <button className={styles.buyBtn}>Buy in beige</button>
+        <button className={styles.buyBtn} >
+        <a href="https://buy.stripe.com/7sIcOPgKF0YsbL25kq" style={{ textDecoration: "none", color: "black" }}>Buy</a>
+        </button >
         </div>
-      </div>
       <div className={styles.gallery}>
         <img src="/gallery/CS_GALLERY_BOWL_1.jpg" className={styles.imageOne} />
         <img src="/gallery/CS_GALLERY_BOWL_2.jpg" className={styles.imageTwo} />

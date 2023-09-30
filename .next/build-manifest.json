@@ -15,10 +15,15 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/Cat-Stuff": [
+    "/Grandpas-Lamp": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Cat-Stuff.js"
+      "static/chunks/pages/Grandpas-Lamp.js"
+    ],
+    "/Grandpas-Lamp-more": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Grandpas-Lamp-more.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

@@ -21,9 +21,9 @@ const CatStuffTree = () => {
           composante a été sourcé en France pour limiter l’empreinte carbone et
           encourager les filières locales.
         </div>
-        <button className={styles.buyBtn}>
-          Buy
-          </button>
+        <button className={styles.buyBtn} >
+        <a href="https://buy.stripe.com/28obKL66136AaGYbIJ" style={{ textDecoration: "none", color: "black" }}>Buy</a>
+        </button >
       </div>
       <div className={styles.gallery}>
       <img src="/gallery/CS_GALLERY_TREE_1.png" className={styles.imageOne} />

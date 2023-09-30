@@ -10,7 +10,8 @@ const LeafLampInfo = () => {
       <div className={styles.infoContainer}>
         <div className={styles.infoTitle}>Grandpa's Lamp</div>
         <div className={styles.info}>
-          These lamps are about our relationship with nature. The natural
+        Steel<br></br><span>L 130cm 450€<br></br>M 75cm 415€<br></br>S 50cm 380€</span><p></p>
+        These lamps are about our relationship with nature. The natural
           elements are not only decorative but structural and essential to the
           function of the lamp. The owner of the lamp is required to go outside
           and find a nice leaf and an interesting rock. Depending on the season,
@@ -24,9 +25,15 @@ const LeafLampInfo = () => {
           weathered steel, leather, stone, leaf
         </div>
         <div className={styles.optionsBtn}>
-        <button className={styles.buyBtn}>Buy Size S</button>
-        <button className={styles.buyBtn}>Buy Size M</button>
-        <button className={styles.buyBtn}>Buy Size L</button>
+        <button className={styles.buyBtn} >
+        <a href="https://buy.stripe.com/aEU7uv3XT8qU4iAbIL" style={{ textDecoration: "none", color: "black" }}>Buy Size S</a>
+        </button >
+        <button className={styles.buyBtn} >
+        <a href="https://buy.stripe.com/fZe0231PL7mQcP67su" style={{ textDecoration: "none", color: "black" }}>Buy Size M</a>
+        </button >
+        <button className={styles.buyBtn} >
+        <a href="https://buy.stripe.com/4gweWXbql9uYbL29AE" style={{ textDecoration: "none", color: "black" }}>Buy Size L</a>
+        </button >
         </div>      </div>
       <div className={styles.gallery}>
         <img src="/gallery/GL_GALLERY_1.jpg" className={styles.imageOne} alt="Gallery 1" />
