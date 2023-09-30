@@ -24,9 +24,9 @@ const LeafLampInfo = () => {
           weathered steel, leather, stone, leaf
         </div>
         <div className={styles.optionsBtn}>
-        <button className={styles.buyBtn}>buy in S</button>
-        <button className={styles.buyBtn}>buy in M</button>
-        <button className={styles.buyBtn}>buy in L</button>
+        <button className={styles.buyBtn}>Buy Size S</button>
+        <button className={styles.buyBtn}>Buy Size M</button>
+        <button className={styles.buyBtn}>Buy Size L</button>
         </div>      </div>
       <div className={styles.gallery}>
         <img src="/gallery/GL_GALLERY_1.jpg" className={styles.imageOne} alt="Gallery 1" />

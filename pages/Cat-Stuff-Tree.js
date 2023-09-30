@@ -22,7 +22,7 @@ const CatStuffTree = () => {
           encourager les filières locales.
         </div>
         <button className={styles.buyBtn}>
-          buy
+          Buy
           </button>
       </div>
       <div className={styles.gallery}>

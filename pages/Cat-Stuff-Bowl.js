@@ -20,8 +20,8 @@ const CatStuffBowl = () => {
           les filières locales.{" "}
         </div>
         <div className={styles.optionsBtn}>
-        <button className={styles.buyBtn}>buy in black</button>
-        <button className={styles.buyBtn}>buy in beige</button>
+        <button className={styles.buyBtn}>Buy in black</button>
+        <button className={styles.buyBtn}>Buy in beige</button>
         </div>
       </div>
       <div className={styles.gallery}>
