@@ -20,11 +20,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/Cat-Stuff.js"
     ],
-    "/Grandpas-Lamp": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Grandpas-Lamp.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
