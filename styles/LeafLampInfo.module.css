@@ -24,6 +24,7 @@
     color: #000;
     border: solid 0.5px #000;
     font-size: 16px;
+    font-weight: 100;
   }
   .optionsBtn {
     display: flex;
@@ -55,6 +56,7 @@
       border: solid 0.5px #000;
       text-decoration: none;
       color: #000;
+      font-weight: 100;
     }
   
   }
