@@ -22,6 +22,7 @@ const BranchLampInfo = () => {
           fragility. They have been weathered and are somewhat imperfect. They
           are held together by leather.
         </div>
+        <button className={styles.buyBtn}>buy</button>
       </div>
       <div className={styles.gallery}>
         <img src="/gallery/BL_GALLERY_1.jpg" className={styles.imageOne} />

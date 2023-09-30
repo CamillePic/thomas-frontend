@@ -15,10 +15,20 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/LeafLampPage": [
+    "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/LeafLampPage.js"
+      "static/chunks/pages/index.js"
+    ],
+    "/OllainVilleHousePage": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/OllainVilleHousePage.js"
+    ],
+    "/OllainvilleInfo": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/OllainvilleInfo.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

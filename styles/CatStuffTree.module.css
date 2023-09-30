@@ -53,7 +53,7 @@
   }
   
   .gallery {
-    margin-top: 10%;
+    margin-top: 7%;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     display: flex;
@@ -104,11 +104,17 @@
     margin-bottom: 5%;
   }
   
-  
   .imageItem {
     width: calc(
       40%
     ); /* Adjust this value based on the number of images you want per row */
     height: auto;
   }
-  
+  .buyBtn {
+    width: 10%;
+    align-self: center;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    background-color: transparent;
+    border: solid 0.5px #000;
+  }
