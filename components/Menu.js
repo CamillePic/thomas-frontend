@@ -14,14 +14,14 @@ const Menu = () => {
 
 
   const objects = [
-    { name: "Grandpa's Lamp", path: "/LeafLampPage", secondPath: "/LeafLampInfo", type: "objects" },
-    { name: "Branch Lamp", path: "/BranchLampPage", secondPath: "/BranchLampInfo", type: "objects" },
-    { name: "Cat Stuff", path: "/CatStuffPage", secondPath: "/CatStuffInfo", type: "objects" },
+    { name: "Grandpa's Lamp", path: "/Grandpas-Lamp", secondPath: "/Grandpas-Lamp-more", type: "objects" },
+    { name: "Branch Lamp", path: "/Branch-Lamp", secondPath: "/Branch-Lamp-more", type: "objects" },
+    { name: "Cat Stuff", path: "/Cat-Stuff", secondPath: "/CatStuffInfo", type: "objects" },
   ];
 
   const spaces = [
-    { name: "Ollainville House", path: "/OllainVilleHousePage", secondPath: "/OllainvilleHouseInfo", type: "spaces" },
-    { name: "ChickenGarage", path: "/ChickenGaragePage", secondPath: "/ChickenGarageInfo", type: "spaces" },
+    { name: "Ollainville House", path: "/OllainVille-House", secondPath: "/Ollainville-House-more", type: "spaces" },
+    { name: "ChickenGarage", path: "/Chicken-Garage", secondPath: "/Chicken-Garage-more", type: "spaces" },
   ];
 
  const [windowWidth, setWindowWidth] = useState(0);

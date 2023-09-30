@@ -97,7 +97,7 @@ function CatStuff() {
                 <div className={styles.popupBtnA}>
                   <p>Nenuphar Perch</p>
                   <p>A minimalist and poetic cat tree entirely made in France... 
-                  <Link href="CatStuffTree">
+                  <Link href="Cat-Stuff-Tree">
                     <button className={styles.insideBtn}>See more</button>
                   </Link>
                   </p>
@@ -119,7 +119,7 @@ function CatStuff() {
                 <div className={styles.popupBtnB}>
                   <p>Pebble Bowl</p>
                   <p>A bowl, like a pebble, seemingly sculpted by water...
-                  <Link href="/CatStuffBowl">
+                  <Link href="/Cat-Stuff-Bowl">
                     <button className={styles.insideBtn}>See more</button>
                   </Link>
                   </p>

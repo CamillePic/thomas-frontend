@@ -15,15 +15,10 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/LeafLampInfo": [
+    "/Cat-Stuff": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/LeafLampInfo.js"
-    ],
-    "/LeafLampPage": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/LeafLampPage.js"
+      "static/chunks/pages/Cat-Stuff.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
