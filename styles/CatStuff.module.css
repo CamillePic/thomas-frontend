@@ -68,6 +68,7 @@
     .popupBtnB {
       width: 80%;
       top: 85%; /* Set the top position to 50% */
+      left: 5%; /* Set the left position to 50% */
       font-size: 14px;
     
     }
