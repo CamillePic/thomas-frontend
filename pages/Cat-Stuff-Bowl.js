@@ -19,7 +19,10 @@ const CatStuffBowl = () => {
           été sourcé en France pour limiter l’empreinte carbone et encourager
           les filières locales.{" "}
         </div>
-        <button className={styles.buyBtn}>buy</button>
+        <div className={styles.optionsBtn}>
+        <button className={styles.buyBtn}>buy in black</button>
+        <button className={styles.buyBtn}>buy in beige</button>
+        </div>
       </div>
       <div className={styles.gallery}>
         <img src="/gallery/CS_GALLERY_BOWL_1.jpg" className={styles.imageOne} />

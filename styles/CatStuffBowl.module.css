@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 5% 90% 5%;
   grid-template-rows: 30% repeat(2, auto);
   height: 100vh;
   width: 100%;
@@ -8,9 +8,20 @@
   margin: 0;
 }
 
-.menu {
-  grid-column: 2 / 2;
-  grid-row: 1 / 2;
+.buyBtn {
+  width: 30%;
+  align-self: center;
+  padding: 0.2%;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  background-color: transparent;
+  text-decoration: none;
+  color: #000;
+  border: solid 0.5px #000;
+}
+.optionsBtn {
+  display: flex;
+  justify-content:  space-around;
 }
 
 @media only screen and (min-width: 880px) {
@@ -25,6 +36,18 @@
   .menu {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+  }
+  .buyBtn {
+    width: 30%;
+    align-self: center;
+    padding: 0.2%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    font-size: 14px;
+    background-color: transparent;
+    border: solid 0.5px #000;
+    text-decoration: none;
+    color: #000;
   }
 }
 
@@ -41,6 +64,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  margin-top: 8%;
 }
 
 .info {
@@ -109,13 +133,4 @@
     40%
   ); /* Adjust this value based on the number of images you want per row */
   height: auto;
-}
-.buyBtn {
-  width: 12%;
-  align-self: center;
-  padding: 0.2%;
-  margin-top: 5%;
-  margin-bottom: 0%;
-  background-color: transparent;
-  border: solid 0.5px #000;
 }

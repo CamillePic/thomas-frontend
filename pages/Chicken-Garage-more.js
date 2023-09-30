@@ -11,7 +11,6 @@ const CatStuffBowl = () => {
           This project is located in the south west of France. The original garage was falling down and needed to be rebuilt, which created the opportunity to integrate a chicken coop into the design. The client had a forest nearby where we selected Robinia pseudoacacia trees to serve as structural columns.
           The resulting design concept was to make a big roof that seemed to float like a cloud with trees disappearing into it. 
         </div>
-        <button className={styles.buyBtn}>buy</button>
       </div>
       <div className={styles.gallery}>
         <img src="/gallery/CG_GALLERY_1.jpg" className={styles.imageOne} />

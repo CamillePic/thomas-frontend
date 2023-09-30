@@ -37,7 +37,7 @@
     text-decoration: underline;
     color: #000;
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100;
   }
 
@@ -57,4 +57,14 @@
       font-size: 16px;
       width: fit-content;
     }
+    .insideBtn {
+      border: none;
+      background: transparent;
+      text-decoration: underline;
+      color: #000;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 100;
+    }
+  
     }

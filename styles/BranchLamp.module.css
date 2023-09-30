@@ -35,11 +35,20 @@
 .popupBtnA {
   position: absolute;
   top: 85%; 
-  left: 10%; 
+  left: 5%; 
   font-size: 14px;
   width: fit-content;
-
 }
+.insideBtn {
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  color: #000;  
+}
+
 @media only screen and (min-width: 880px) {
   .popupBtnA {
     position: absolute;
@@ -48,9 +57,6 @@
     font-size: 16px;
     width: fit-content;
   }
-  }
-
-  
   .insideBtn {
     border: none;
     background: transparent;
@@ -60,4 +66,8 @@
     font-weight: 100;
     color: #000;  
   }
+  }
+
+  
+
 
