@@ -82,7 +82,7 @@ function BranchLamp() {
               <div className={styles.popupBtnA}>
                 <p>Branch Lamp</p>
                 <p> simple floor lamp held up by a branch... 
-                <Link href="/BranchLampInfo">
+                <Link href="/Branch-Lamp-more">
                   <button className={styles.insideBtn}>See more</button>
                 </Link>
                 </p>

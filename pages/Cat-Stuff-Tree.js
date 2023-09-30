@@ -1,20 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Menu from "../components/Menu";
 import styles from "../styles/CatStuffTree.module.css";
-import Inrequire from "./popupInfo/Inrequire";
-
 
 const CatStuffTree = () => {
 
-  const [showPopUp, setShowPopUp] = useState(false); // Separate state for each popup
-
-  const handlePopup = () => {
-    if (!showPopUp) {
-      setShowPopUp(true);
-    } else {
-      setShowPopUp(false);
-    }
-  };
 
   return (
     <div className={styles.container}>
@@ -33,15 +22,7 @@ const CatStuffTree = () => {
           encourager les filières locales.
         </div>
         <button className={styles.buyBtn}>
-        {showPopUp && (
-              <Inrequire onClose={handlePopup} >
-                <div className={styles.popupBtnA}>
-                  <p>Require more information</p>
-                  <p>mail form</p>
-                </div>
-              </Inrequire>
-            )}
-          Require more information
+          buy
           </button>
       </div>
       <div className={styles.gallery}>

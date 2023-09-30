@@ -117,10 +117,22 @@
   }
 
   .buyBtn {
-    width: 10%;
+    width: 20%;
     align-self: center;
     margin-top: 5%;
     margin-bottom: 0%;
     background-color: transparent;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 14px;
+    color: #000;
     border: solid 0.5px #000;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inquire {
+    margin: 0.2%;
   }
