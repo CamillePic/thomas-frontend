@@ -67,9 +67,7 @@
   }
     .popupBtnB {
       width: 80%;
-      position: fixed;
       top: 85%; /* Set the top position to 50% */
-      left: 5%; /* Set the left position to 50% */
       font-size: 14px;
     
     }
@@ -98,4 +96,11 @@
         font-weight: 100;
       }
     
+      }
+      .popUpA {
+        left: 5%; /* Set the left position to 50% */
+      }
+
+      .popUpB {
+        left: 5%; /* Set the left position to 50% */
       }
