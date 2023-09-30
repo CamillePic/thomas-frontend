@@ -80,9 +80,9 @@ function OllainvilleHouse() {
             <LeafPopup onClose={handleClosePopUp} >
               <div className={styles.popupBtnA}>
                 <p>Ollainville House...
-                <Link href="/OllainvilleInfo">
+                {/* <Link href="/OllainvilleInfo">
                   <button className={styles.insideBtn}>See more</button>
-                </Link>
+                </Link> */}
                 </p>
               </div>
             </LeafPopup>
