@@ -122,7 +122,7 @@ function GrandpasLamp() {
               <LeafPopup onClose={handleClosePopUp} >
                 <div className={styles.popupBtnA}>
                 <p>Large Grandpas's Lamp (130cm)</p><p>A lamp where nature is not only decorative but essential... 
-                  <Link href="/LeafLampInfo">
+                <Link href="/Grandpas-Lamp-more">
                     <button className={styles.insideBtn}>See more</button>
                   </Link>
                   </p>
@@ -164,7 +164,7 @@ function GrandpasLamp() {
               >
                 <div className={styles.popupBtnC}>
                 <p>Medium Grandpas's Lamp (75cm)</p><p>A lamp where nature is not only decorative but essential... 
-                  <Link href="/LeafLampInfo">
+                <Link href="/Grandpas-Lamp-more">
                     <button className={styles.insideBtn}>See more</button>
                   </Link>
                   </p>

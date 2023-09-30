@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 5% 90% 5%;
     grid-template-rows: 30% repeat(2, auto);
     height: 100vh;
     width: 100%;
@@ -12,6 +12,18 @@
     grid-column: 2 / 2;
     grid-row: 1 / 2;
   }
+
+  .buyBtn {
+    width: 12%;
+    align-self: center;
+    padding: 0.2%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    background-color: transparent;
+    border: solid 0.5px #000;
+    font-size: 16px;
+  }
+
 
   @media only screen and (min-width: 880px) {
     .container {
@@ -26,6 +38,17 @@
       grid-column: 1 / 2;
       grid-row: 1 / 4;
     }
+    .buyBtn {
+      width: 12%;
+      align-self: center;
+      padding: 0.2%;
+      margin-top: 8%;
+      margin-bottom: 5%;
+      font-size: 14px;
+      background-color: transparent;
+      border: solid 0.5px #000;
+    }
+  
   }
   
   .infoContainer {
@@ -41,6 +64,8 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    margin-top: 8%;
+
   }
 
   .info {
@@ -120,12 +145,3 @@
 
   }
 
-  .buyBtn {
-    width: 12%;
-    align-self: center;
-    padding: 0.2%;
-    margin-top: 5%;
-    margin-bottom: 0%;
-    background-color: transparent;
-    border: solid 0.5px #000;
-  }
