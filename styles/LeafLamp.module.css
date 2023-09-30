@@ -27,7 +27,7 @@
   height: fit-content;
   position: absolute;
   top: 10%; /* Set the top position to 50% */
-  left: 80%; /* Set the left position to 50% */
+  left: 58%; /* Set the left position to 50% */
 }
 
 
@@ -64,7 +64,7 @@
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 27%; 
+  top: 32%; 
   left: 40%; 
 }
 
@@ -75,9 +75,6 @@
   top: 85%; /* Set the top position to 50% */
   left: 10%; /* Set the left position to 50% */
   font-size: 14px;
-  background-color: #c6c5c15b;
-
-
 }
 @media only screen and (min-width: 880px) {
   .popupBtnB {
