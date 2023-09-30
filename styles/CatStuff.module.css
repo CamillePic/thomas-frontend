@@ -66,15 +66,14 @@
     left: 5%; /* Set the left position to 50% */
     font-size: 14px;
     text-align: left;
-  
+
   }
     .popupBtnB {
-      width: 80%;
+      position: fixed;
       top: 85%; /* Set the top position to 50% */
       left: 5%; /* Set the left position to 50% */
       font-size: 14px;
       text-align: left;
-
     }
     @media only screen and (min-width: 880px) {
       .popupBtnA {
