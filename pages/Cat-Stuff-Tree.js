@@ -3,6 +3,7 @@ import Menu from "../components/Menu";
 import styles from "../styles/CatStuffTree.module.css";
 import Inrequire from "./popupInfo/Inrequire";
 
+
 const CatStuffTree = () => {
 
   const [showPopUp, setShowPopUp] = useState(false); // Separate state for each popup
