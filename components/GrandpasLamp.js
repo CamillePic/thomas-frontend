@@ -121,7 +121,8 @@ function GrandpasLamp() {
             {showPopUpA && (
               <LeafPopup onClose={handleClosePopUp} >
                 <div className={styles.popupBtnA}>
-                <p>Large Grandpas's Lamp (130cm)</p><p>A lamp where nature is not only decorative but essential... 
+                <p>Large Grandpas's Lamp (130cm)</p>
+                <p>A lamp where nature is not only decorative but essential... 
                 <Link href="/Grandpas-Lamp-more">
                     <button className={styles.insideBtn}>See more</button>
                   </Link>
