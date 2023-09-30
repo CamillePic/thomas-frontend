@@ -96,9 +96,7 @@ function CatStuff() {
               <LeafPopup onClose={handleClosePopUp} >
                 <div className={styles.popupBtnA}>
                   <p>Nenuphar Perch</p>
-                  <p>A minimalist and poetic cat tree entirely made in France... 
-                  <Link href="Cat-Stuff-Tree">
-                  <button className={styles.insideBtn}>See more</button>
+                  <p>A minimalist and poetic cat tree entirely made in France...<Link href="Cat-Stuff-Tree"><button className={styles.insideBtn}>See more</button>
                   </Link>
                   </p>
                 </div>
@@ -118,9 +116,7 @@ function CatStuff() {
               >
                 <div className={styles.popupBtnB}>
                   <p>Pebble Bowl</p>
-                  <p>A bowl, like a pebble, seemingly sculpted by water...
-                  <Link href="/Cat-Stuff-Bowl">
-                  <button className={styles.insideBtn}>See more</button>
+                  <p>A bowl, like a pebble, seemingly sculpted by water...<Link href="/Cat-Stuff-Bowl"><button className={styles.insideBtn}>See more</button>
                   </Link>
                   </p>
                 </div>
