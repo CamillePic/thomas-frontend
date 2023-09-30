@@ -7,9 +7,9 @@ import Link from "next/link";
 function LeafLamp() {
   const images = {
     off: "/GL_WIDESCREEN_OFF.jpg",
-    left: "/GL_WIDESCREEN_LEFT.jpg",
-    right: "/GL_WIDESCREEN_RIGHT.jpg",
-    middle: "/GL_WIDESCREEN_MIDDLE.jpg",
+    left: "/GL_WIDESCREEN_M.jpg",
+    right: "/GL_WIDESCREEN_L.jpg",
+    middle: "/GL_WIDESCREEN_S.jpg",
   };
 
   const [backgroundImage, setBackgroundImage] = useState(images.off);
