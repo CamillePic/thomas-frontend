@@ -57,7 +57,7 @@
     height: fit-content;
     position: absolute;
     top: 65%;
-    left: 70%;
+    left: 69%;
   }
 
 
@@ -67,6 +67,9 @@
     background: transparent;
     text-decoration: underline;
     color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
   }
 
   .popupBtnA {
@@ -77,25 +80,22 @@
     width: fit-content;
   
   }
-  @media only screen and (min-width: 880px) {
-    .popupBtnA {
-      position: absolute;
-      top: 88%; /* Set the top position to 50% */
-      left: 2%; /* Set the left position to 50% */
-      font-size: 16px;
-      width: fit-content;
-    }
-    }
     .popupBtnB {
       position: absolute;
       top: 85%; /* Set the top position to 50% */
       left: 10%; /* Set the left position to 50% */
       font-size: 14px;
       width: fit-content;
-      
     
     }
     @media only screen and (min-width: 880px) {
+      .popupBtnA {
+        position: absolute;
+        top: 88%; /* Set the top position to 50% */
+        left: 2%; /* Set the left position to 50% */
+        font-size: 16px;
+        width: fit-content;
+      }
       .popupBtnB {
         position: absolute;
         top: 88%; /* Set the top position to 50% */
@@ -103,4 +103,14 @@
         font-size: 16px;
         width: fit-content;
       }
+      .insideBtn {
+        border: none;
+        background: transparent;
+        text-decoration: underline;
+        color: #000;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 100;
+      }
+    
       }

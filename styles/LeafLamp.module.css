@@ -30,7 +30,6 @@
   left: 58%; /* Set the left position to 50% */
 }
 
-
 .hotspotB {
   font-family: "EB Garamond", regular;
   font-weight: 100;
@@ -49,7 +48,6 @@
   left: 50%; /* Set the left position to 50% */
 }
 
-
 .hotspotC {
   font-family: "EB Garamond", regular;
   font-weight: 100;
@@ -64,11 +62,9 @@
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 32%; 
-  left: 40%; 
+  top: 32%;
+  left: 40%;
 }
-
-
 
 .popupBtnB {
   position: fixed;
@@ -84,42 +80,29 @@
     font-size: 16px;
     width: fit-content;
   }
-  }
+}
+.popupBtnC {
+  position: fixed;
+  top: 85%; /* Set the top position to 50% */
+  left: 10%; /* Set the left position to 50% */
+  font-size: 14px;
+}
+@media only screen and (min-width: 880px) {
   .popupBtnC {
     position: fixed;
-    top: 85%; /* Set the top position to 50% */
-    left: 10%; /* Set the left position to 50% */
-    font-size: 14px;
-  
+    top: 88%; /* Set the top position to 50% */
+    left: 2%; /* Set the left position to 50% */
+    font-size: 16px;
+    width: fit-content;
   }
-  @media only screen and (min-width: 880px) {
-    .popupBtnC {
-      position: fixed;
-      top: 88%; /* Set the top position to 50% */
-      left: 2%; /* Set the left position to 50% */
-      font-size: 16px;
-      width: fit-content;
-    }
-    }
+}
 
-    .popupBtnA {
-      position: fixed;
-      top: 85%; /* Set the top position to 50% */
-      left: 10%; /* Set the left position to 50% */
-      font-size: 14px;
-    
-    }
-    @media only screen and (min-width: 880px) {
-      .popupBtnA {
-        position: fixed;
-        top: 88%; /* Set the top position to 50% */
-        left: 2%; /* Set the left position to 50% */
-        font-size: 16px;
-        width: fit-content;
-      }
-      }
-
-
+.popupBtnA {
+  position: fixed;
+  top: 85%; /* Set the top position to 50% */
+  left: 10%; /* Set the left position to 50% */
+  font-size: 14px;
+}
 .insideBtn {
   border: none;
   background: transparent;
@@ -127,5 +110,28 @@
   margin-left: 0;
   text-decoration: underline;
   color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
 }
 
+@media only screen and (min-width: 880px) {
+  .popupBtnA {
+    position: fixed;
+    top: 88%; /* Set the top position to 50% */
+    left: 2%; /* Set the left position to 50% */
+    font-size: 16px;
+    width: fit-content;
+  }
+  .insideBtn {
+    border: none;
+    background: transparent;
+    margin-top: 0%;
+    margin-left: 0;
+    text-decoration: underline;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+  }
+}

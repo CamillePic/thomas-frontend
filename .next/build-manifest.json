@@ -15,15 +15,20 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/Branch-Lamp": [
+    "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Branch-Lamp.js"
+      "static/chunks/pages/index.js"
     ],
-    "/Branch-Lamp-more": [
+    "/Grandpas-Lamp": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Branch-Lamp-more.js"
+      "static/chunks/pages/Grandpas-Lamp.js"
+    ],
+    "/Grandpas-Lamp-more": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Grandpas-Lamp-more.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

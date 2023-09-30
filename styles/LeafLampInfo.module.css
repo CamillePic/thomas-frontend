@@ -121,8 +121,9 @@
   }
 
   .buyBtn {
-    width: 10%;
+    width: 12%;
     align-self: center;
+    padding: 0.2%;
     margin-top: 5%;
     margin-bottom: 0%;
     background-color: transparent;
