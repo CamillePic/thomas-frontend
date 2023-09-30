@@ -23,8 +23,11 @@ const LeafLampInfo = () => {
           leather. Teflon wiring, socket, switch, plug, E14 LED light bulb,
           weathered steel, leather, stone, leaf
         </div>
-        <button className={styles.buyBtn}>buy</button>
-      </div>
+        <div className={styles.optionsBtn}>
+        <button className={styles.buyBtn}>buy in S</button>
+        <button className={styles.buyBtn}>buy in M</button>
+        <button className={styles.buyBtn}>buy in L</button>
+        </div>      </div>
       <div className={styles.gallery}>
         <img src="/gallery/GL_GALLERY_1.jpg" className={styles.imageOne} alt="Gallery 1" />
         <img src="/gallery/GL_GALLERY_2.jpg" className={styles.imageTwo} alt="Gallery 2" />
