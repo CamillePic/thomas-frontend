@@ -88,7 +88,11 @@
 
 .popupBtnA {
   position: fixed;
-  justify-content: left;
+  justify-self: left;
+  justify-items: left;
+  align-self: left;
+  align-items: left;
+  align-content: left;
   top: 85%; /* Set the top position to 50% */
   left: 5%; /* Set the left position to 50% */
   font-size: 14px;
