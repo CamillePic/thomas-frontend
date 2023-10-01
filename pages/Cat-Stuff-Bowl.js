@@ -3,6 +3,8 @@ import Menu from "../components/Menu";
 import styles from "../styles/CatStuffBowl.module.css";
 import Link from "next/link";
 
+//comments
+
 const CatStuffBowl = () => {
   return (
     <div className={styles.container}>
