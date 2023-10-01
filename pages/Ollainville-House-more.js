@@ -20,7 +20,7 @@ const OllainvilleInfo = () => {
            impression of an infinite hallway, an interior world.{" "}   </div>
       </div>
       <div className={styles.gallery}>
-        <img src="/gallery/OH_GALLERY_1.png" className={styles.imageOne} />
+        <img src="/gallery/OH_GALLERY_1.jpg" className={styles.imageOne} />
         <img src="/gallery/OH_GALLERY_2.jpg" className={styles.imageTwo} />
         <img src="/gallery/OH_GALLERY_3_2.jpg" className={styles.imageThree} />
         <img src="/gallery/OH_GALLERY_4.jpg" className={styles.imageThree} />

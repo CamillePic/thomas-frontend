@@ -40,35 +40,38 @@
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 100;
+    padding: 0%;
+    margin: 0%;
     cursor: pointer;
   }
 
   .popupBtnA {
     position: fixed;
-    top: 85%; 
-    left: 10%; 
+    top: 85%; /* Set the top position to 50% */
+    left: 5%; /* Set the left position to 50% */
     font-size: 14px;
-    width: fit-content;
     text-align: left;
-  
   }
+
   @media only screen and (min-width: 880px) {
-    .popupBtnA {
-      position: fixed;
-      top: 90%; 
-      left: 2%; 
-      font-size: 16px;
-      width: fit-content;
-      text-align: left;
-    }
-    .insideBtn {
-      border: none;
-      background: transparent;
-      text-decoration: underline;
-      color: #000;
-      font-family: "Open Sans", sans-serif;
-      font-size: 16px;
-      font-weight: 100;
-    }
+  .popupBtnA {
+    position: fixed;
+    top: 85%; /* Set the top position to 50% */
+    left: 5%; /* Set the left position to 50% */
+    font-size: 16px;
+    text-align: left;
+  }
+  .insideBtn {
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 0%;
+    margin: 0%;
+    cursor: pointer;
+  }
   
     }
