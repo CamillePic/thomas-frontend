@@ -71,7 +71,7 @@
 
 .popupBtnB {
   position: fixed;
-  bottom: 5%; /* Set the top position to 50% */
+  bottom: 2%; /* Set the top position to 50% */
   left: 5%; /* Set the left position to 50% */
   font-size: 14px;
   text-align: left;
@@ -79,7 +79,7 @@
 
 .popupBtnC {
   position: fixed;
-  bottom: 5%; 
+  bottom: 2%; 
   left: 5%; 
   font-size: 14px;
   text-align: left;
@@ -93,7 +93,7 @@
   align-self: left;
   align-items: left;
   align-content: left;
-  bottom: 5%; /* Set the top position to 50% */
+  bottom: 2%; /* Set the top position to 50% */
   left: 5%; 
   font-size: 14px;
   text-align: left;
@@ -115,7 +115,7 @@
 @media only screen and (min-width: 880px) {
   .popupBtnA {
     position: fixed;
-    bottom: 5%; /* Set the top position to 50% */
+    bottom: 2%; /* Set the top position to 50% */
     left: 2%; /* Set the left position to 50% */
     font-size: 16px;
     width: fit-content;
@@ -136,7 +136,7 @@
 
   .popupBtnC {
     position: fixed;
-    bottom: 5%; /* Set the top position to 50% */
+    bottom: 2%; /* Set the top position to 50% */
     left: 2%; /* Set the left position to 50% */
     font-size: 16px;
     width: fit-content;
@@ -145,7 +145,7 @@
 
   .popupBtnB {
     position: fixed;
-    bottom: 5%; /* Set the top position to 50% */
+    bottom: 2%; /* Set the top position to 50% */
     left: 2%; /* Set the left position to 50% */
     font-size: 16px;
     text-align: left;
