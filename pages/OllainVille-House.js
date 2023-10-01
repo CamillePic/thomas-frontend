@@ -3,7 +3,7 @@ import OllainvilleHouse from "../components/OllainvilleHouse";
 
 const OllainVilleHousePage = () => {
   return (
-<Ollainville-House />  );
+<OllainvilleHouse />  );
 };
 
 export default OllainVilleHousePage;
