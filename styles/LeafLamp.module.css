@@ -96,16 +96,12 @@
 .insideBtn {
   border: none;
   background: transparent;
-  margin-top: 0%;
-  margin-left: 0;
   text-decoration: underline;
   color: #000;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 100;
   cursor: pointer;
-  text-align: left;
-
 }
 
 @media only screen and (min-width: 880px) {
@@ -119,16 +115,14 @@
   .insideBtn {
     border: none;
     background: transparent;
-    margin-top: 0%;
-    margin-left: 0;
     text-decoration: underline;
     color: #000;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 100;
-    text-align: left;
     cursor: pointer;
   }
+  
   .popupBtnC {
     position: fixed;
     top: 88%; /* Set the top position to 50% */
