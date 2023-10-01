@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Menu from "../components/Menu";
 import styles from "../styles/ChickenGarageInfo.module.css";
 
-const CatStuffBowl = () => {
+const ChickenGarageInfo = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
@@ -17,10 +17,8 @@ const CatStuffBowl = () => {
         <img src="/gallery/CG_GALLERY_2.jpg" className={styles.imageTwo} />
         <img src="/gallery/CG_GALLERY_3.jpg" className={styles.imageThree} />
       </div>
-
-      {/* Add more content about the Leaf Lamp here */}
     </div>
   );
 };
 
-export default CatStuffBowl;
+export default ChickenGarageInfo;

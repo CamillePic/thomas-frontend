@@ -20,7 +20,7 @@ const Menu = () => {
   ];
 
   const spaces = [
-    { name: "Ollainville House", path: "/OllainVille-House", secondPath: "/Ollainville-House-more", type: "spaces" },
+    { name: "Ollainville House", path: "/Ollainville-House", secondPath: "/Ollainville-House-more", type: "spaces" },
     { name: "ChickenGarage", path: "/Chicken-Garage", secondPath: "/Chicken-Garage-more", type: "spaces" },
   ];
 

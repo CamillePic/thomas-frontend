@@ -90,7 +90,24 @@ background-position: center; */
   align-self: center;
 }
 
+.instagram {
+  text-decoration: none;
+  text-decoration: underline;
+  color: #000;
+  margin-top: 8%;
+}
 
+.contact {
+  margin-top: 8%;
+}
+
+.mention {
+  margin-top: 8%;
+}
+
+.paragraphe {
+  margin-top: 2%;
+}
 
 /* @keyframes fall {
   0% {

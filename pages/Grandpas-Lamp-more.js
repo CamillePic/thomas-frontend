@@ -20,19 +20,17 @@ const LeafLampInfo = () => {
           more about the trees surrounding us and the ground we walk on.
           Eventually, the leaf will wither away, requiring us to find a new one.
           The man-made elements are minimal and express fragility. They have
-          been weathered and are somewhat imperfect. They are held together by
-          leather. Teflon wiring, socket, switch, plug, E14 LED light bulb,
-          weathered steel, leather, stone, leaf
+          been weathered and are somewhat imperfect.
         </div>
         <div className={styles.optionsBtn}>
         <button className={styles.buyBtn} >
-        <a href="https://buy.stripe.com/aEU7uv3XT8qU4iAbIL" style={{ textDecoration: "none", color: "black" }}>Buy Size S</a>
+        <a href="https://buy.stripe.com/aEU7uv3XT8qU4iAbIL" style={{ textDecoration: "none", color: "black", fontWeight: 100, fontFamily: "Open Sans", fontSize: "1rem"}}>Buy Size S</a>
         </button >
         <button className={styles.buyBtn} >
-        <a href="https://buy.stripe.com/fZe0231PL7mQcP67su" style={{ textDecoration: "none", color: "black" }}>Buy Size M</a>
+        <a href="https://buy.stripe.com/fZe0231PL7mQcP67su" style={{ textDecoration: "none", color: "black", fontWeight: 100, fontFamily: "Open Sans", fontSize: "1rem"}}>Buy Size M</a>
         </button >
         <button className={styles.buyBtn} >
-        <a href="https://buy.stripe.com/4gweWXbql9uYbL29AE" style={{ textDecoration: "none", color: "black" }}>Buy Size L</a>
+        <a href="https://buy.stripe.com/4gweWXbql9uYbL29AE" style={{ textDecoration: "none", color: "black", fontWeight: 100, fontFamily: "Open Sans", fontSize: "1rem"}}>Buy Size L</a>
         </button >
         </div>      </div>
       <div className={styles.gallery}>

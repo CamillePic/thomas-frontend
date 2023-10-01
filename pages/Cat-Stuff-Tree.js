@@ -3,30 +3,34 @@ import Menu from "../components/Menu";
 import styles from "../styles/CatStuffTree.module.css";
 
 const CatStuffTree = () => {
-
-
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
         <div className={styles.infoTitle}>Cat Tree</div>
         <div className={styles.info}>
-          Steel, aluminum, felt, oak La grande majorité des meubles pour chats
-          sont inesthétiques, de mauvaise qualité et fabriqués en masse dans des
-          pays lointains. Nous avons voulu créer du mobilier poétique, de
-          manière artisanale, en France. Prenant le point de vue d’un chat, les
-          plantes deviennent des paysages et le mobilier de l’architecture.
-          Notre approche consiste à trouver une échelle commune entre les chats
-          et les humains à travers du mobilier poétique. Les produits sont les
-          fruits d’une étroite collaboration avec des artisans et chaque
-          composante a été sourcé en France pour limiter l’empreinte carbone et
-          encourager les filières locales.
+          Steel, aluminum, felt, oak<br></br>
+          <span>120cm 2800€</span>
+          <p></p>
+          The vast majority of cat furniture is unattractive, of poor quality
+          and mass-produced in faraway countries. We wanted to create high
+          quality, poetic furniture, handcrafted in France. From a cat's point
+          of view, plants become landscapes and furniture becomes architecture.
+          Our approach was to find a common scale between cats and humans. This
+          cat tree is the fruit of a close collaboration with craftsmen and
+          every component has been sourced in France to limit our carbon
+          footprint and to encourage local supply chains.{" "}
         </div>
-        <button className={styles.buyBtn} >
-        <a href="https://buy.stripe.com/28obKL66136AaGYbIJ" style={{ textDecoration: "none", color: "black" }}>Buy</a>
-        </button >
+        <button className={styles.buyBtn}>
+          <a
+            href="https://buy.stripe.com/28obKL66136AaGYbIJ"
+            style={{ textDecoration: "none", color: "black", fontWeight: 100, fontFamily: "Open Sans", fontSize: "1rem" }}
+          >
+            Buy
+          </a>
+        </button>
       </div>
       <div className={styles.gallery}>
-      <img src="/gallery/CS_GALLERY_TREE_1.png" className={styles.imageOne} />
+        <img src="/gallery/CS_GALLERY_TREE_1.png" className={styles.imageOne} />
 
         <img src="/gallery/CS_GALLERY_TREE_2.jpg" className={styles.imageTwo} />
         <img

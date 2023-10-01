@@ -15,15 +15,15 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/Grandpas-Lamp": [
+    "/Ollainville-House": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Grandpas-Lamp.js"
+      "static/chunks/pages/Ollainville-House.js"
     ],
-    "/Grandpas-Lamp-more": [
+    "/Ollainville-House-more": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Grandpas-Lamp-more.js"
+      "static/chunks/pages/Ollainville-House-more.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

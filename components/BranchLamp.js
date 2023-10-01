@@ -81,7 +81,7 @@ function BranchLamp() {
             <LeafPopup onClose={handleClosePopUp} >
               <div className={styles.popupBtnA}>
                 <p>Branch Lamp</p>
-                <p> simple floor lamp held up by a branch... 
+                <p>A simple floor lamp held by a branch...
                 <Link href="/Branch-Lamp-more">
                   <button className={styles.insideBtn}>See more</button>
                 </Link>

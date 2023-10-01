@@ -9,21 +9,16 @@ const BranchLampInfo = () => {
       <div className={styles.infoContainer}>
         <div className={styles.infoTitle}>Branch Lamp</div>
         <div className={styles.info}>
-          Teflon wiring, socket, switch, plug, E14 LED light bulb, weathered
-          steel, leather, stone, leaf These lamps are about our relationship
-          with nature. The natural elements are not only decorative but
-          structural and essential to the function of the lamp. The owner of the
-          lamp is required to go outside and find a nice leaf and an interesting
-          rock. Depending on the season, the leaf will have a different color.
-          Different climates and geological histories can be revealed, perhaps
-          encouraging us to learn more about the trees surrounding us and the
-          ground we walk on. Eventually, the leaf will wither away, requiring us
-          to find a new one. The man made elements are minimal and express
-          fragility. They have been weathered and are somewhat imperfect. They
-          are held together by leather.
+          Steel<br></br>
+          <span>200cm</span>
+          <p></p>
+          The structure of this lamp consists of two steel tubes. The owner must
+          find a branch to complete the structure. Hence, the natural element is
+          not only decorative but essential to the function of the lamp. The
+          simple, minimal design allows each material to speak for itself.{" "}
         </div>
         <a href="mailto: takadathomas@yahoo.com" className={styles.buyBtn}>
-         <p className={styles.inquire}>Inquire</p> 
+          <p className={styles.inquire}>Inquire</p>
         </a>
       </div>
       <div className={styles.gallery}>
