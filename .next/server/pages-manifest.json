@@ -1,7 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/Ollainville-House-more": "pages/Ollainville-House-more.js",
+  "/_document": "pages/_document.js",
   "/Ollainville-House": "pages/Ollainville-House.js"
 }

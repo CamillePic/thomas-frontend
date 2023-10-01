@@ -15,15 +15,20 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
+    "/Chicken-Garage": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Chicken-Garage.js"
+    ],
+    "/Chicken-Garage-more": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Chicken-Garage-more.js"
+    ],
     "/Ollainville-House": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Ollainville-House.js"
-    ],
-    "/Ollainville-House-more": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Ollainville-House-more.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
