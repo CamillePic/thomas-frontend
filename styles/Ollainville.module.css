@@ -29,9 +29,23 @@
     left: 70%; 
     cursor: pointer;
   }
+
+  .insideBtn {
+    border: none;
+    background: transparent;
+    margin-top: 0%;
+    margin-left: 0;
+    text-decoration: underline;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    cursor: pointer;
+    text-align: left;
+  }
   
   .popupBtnA {
-    position: absolute;
+    position: fixed;
     top: 85%; 
     left: 10%; 
     font-size: 14px;
@@ -40,22 +54,27 @@
   }
   @media only screen and (min-width: 880px) {
     .popupBtnA {
-      position: absolute;
+      position: fixed;
       top: 90%; 
       left: 2%; 
       font-size: 16px;
       width: fit-content;
       text-align: left;
     }
+    .insideBtn {
+      border: none;
+      background: transparent;
+      margin-top: 0%;
+      margin-left: 0;
+      text-decoration: underline;
+      color: #000;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 100;
+      text-align: left;
+      cursor: pointer;  
+      text-align: left;
+    }
+
     }
   
-  .insideBtn {
-    border: none;
-    background: transparent;
-    text-decoration: underline;
-    color: #000;  
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-    cursor: pointer;
-  }

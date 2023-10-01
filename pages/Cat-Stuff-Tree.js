@@ -9,7 +9,7 @@ const CatStuffTree = () => {
         <div className={styles.infoTitle}>Cat Tree</div>
         <div className={styles.info}>
           Steel, aluminum, felt, oak<br></br>
-          <span>120cm 2800€</span>
+          <span>120cm <br></br>2800€</span>
           <p></p>
           The vast majority of cat furniture is unattractive, of poor quality
           and mass-produced in faraway countries. We wanted to create high

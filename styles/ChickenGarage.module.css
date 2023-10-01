@@ -44,7 +44,7 @@
   }
 
   .popupBtnA {
-    position: absolute;
+    position: fixed;
     top: 85%; 
     left: 10%; 
     font-size: 14px;
@@ -54,7 +54,7 @@
   }
   @media only screen and (min-width: 880px) {
     .popupBtnA {
-      position: absolute;
+      position: fixed;
       top: 90%; 
       left: 2%; 
       font-size: 16px;
