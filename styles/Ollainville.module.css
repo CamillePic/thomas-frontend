@@ -51,6 +51,7 @@
     text-align: left;
   }
 
+
   @media only screen and (min-width: 880px) {
   .popupBtnA {
     position: fixed;
