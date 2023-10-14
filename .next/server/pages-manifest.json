@@ -1,9 +1,5 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/Branch-Shelves-more": "pages/Branch-Shelves-more.js",
-  "/": "pages/index.js",
-  "/Lamp-Anyone-Can-Make": "pages/Lamp-Anyone-Can-Make.js",
-  "/Lamp-Anyone-Can-Make-more": "pages/Lamp-Anyone-Can-Make-more.js"
+  "/_document": "pages/_document.js"
 }

@@ -19,10 +19,6 @@
     background: #ECE9E6;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-/* background-image: url("/WEBSITE_LEAF_WIDESCREEN.png"); */
-/* background-size: cover; */
-/* background-repeat: no-repeat;
-background-position: center; */
   }
 
   .menu {
@@ -45,9 +41,22 @@ background-position: center; */
     }
   }
   
+
+
   .thomas {
     animation: myAnim 1s ease 0s 1 normal forwards;
 
+  }
+
+
+
+  .info {
+    margin-top : 2%;
+  }
+  .infoTitle {
+    font-family: "EB Garamond";
+    font-weight: 300;
+    font-size: 18px;
   }
 
   .infoContainer {
@@ -65,17 +74,21 @@ background-position: center; */
     line-height: normal;
     animation: myAnim 1s ease 0s 1 normal forwards;
   }
-
-  .info {
-    margin-top : 2%;
-  }
-  .infoTitle {
-    font-family: "EB Garamond";
-    font-weight: 300;
-    font-size: 18px;
-  }
   
-
+  @media only screen and (max-width: 400px) {
+    .container {
+      display: grid;
+      grid-template-columns: 5% 90% 5%;
+      grid-template-rows: 40% repeat(2, auto);
+      height: 100vh;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    }
 
 /* components/FallingLeavesAnimation.module.css */
 
@@ -109,31 +122,3 @@ background-position: center; */
   margin-top: 2%;
 }
 
-/* @keyframes fall {
-  0% {
-    transform: translateY(-10%);
-    opacity: 0.7;
-  }
-  100% {
-    transform: translateY(110%);
-    opacity: 0;
-  }
-} */
-
-/* @keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* .leaf1 {
-  animation: fall 10s linear infinite, spin 5s linear infinite; 
-} */
-
-/* .leaf2 {
-  animation: fall 12s linear infinite, spin 4s linear infinite; 
-  animation-delay: 0s; 
-}  */
