@@ -11,7 +11,7 @@ const CatStuffBowl = () => {
       <div className={styles.infoContainer}>
         <div className={styles.infoTitle}>Pebble Cat Bowl</div>
         <div className={styles.info}>
-          Enameled ceramic<br></br>
+          Enameled ceramic<br></br>Handmade in France<br></br>
           <span>5x11cm (variable dimensions)<br></br>50€</span>
           <p></p>
           The original design intention was for these bowls to look like stones

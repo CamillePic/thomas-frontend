@@ -8,9 +8,9 @@ const LeafLampInfo = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
-        <div className={styles.infoTitle}>Grandpa's Lamp</div>
+        <h1 className={styles.infoTitle}>Grandpa's Lamp</h1>
         <div className={styles.info}>
-        Steel<br></br><span>L 130cm 450€<br></br>M 75cm 415€<br></br>S 50cm 380€</span><p></p>
+        Steel<br></br>Made in France<br></br><br></br><span>L 130cm 450€<br></br>M 75cm 415€<br></br>S 50cm 380€</span><p></p>
         These lamps are about our relationship with nature. The natural
           elements are not only decorative but structural and essential to the
           function of the lamp. The owner of the lamp is required to go outside
