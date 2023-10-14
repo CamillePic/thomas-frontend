@@ -80,7 +80,7 @@ function BranchShelves() {
           {showPopUpA && (
             <LeafPopup onClose={handleClosePopUp} >
               <div className={styles.popupBtnA}>
-                <p>Branch Lamp</p>
+                <p>Branch Shelves</p>
                 <p>Shelves to bring nature inside... 
                 <Link href="/Branch-Shelves-more">
                   <button className={styles.insideBtn}>See more</button>
