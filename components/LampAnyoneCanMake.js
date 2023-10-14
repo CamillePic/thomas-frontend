@@ -80,7 +80,7 @@ function LampAnyoneCanMake() {
           {showPopUpA && (
             <LeafPopup onClose={handleClosePopUp} >
               <div className={styles.popupBtnA}>
-                <p>Branch Lamp</p>
+                <p>Lamp Anyone Can Make</p>
                 <p>An exercise in simplicity... 
                 <Link href="/Lamp-Anyone-Can-Make-more">
                   <button className={styles.insideBtn}>See more</button>
