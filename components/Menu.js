@@ -17,6 +17,7 @@ const Menu = () => {
     { name: "Grandpa's Lamp", path: "/Grandpas-Lamp", secondPath: "/Grandpas-Lamp-more", type: "objects" },
     { name: "Branch Lamp", path: "/Branch-Lamp", secondPath: "/Branch-Lamp-more", type: "objects" },
     { name: "Cat Stuff", path: "/Cat-Stuff", secondPath: "/CatStuffInfo", type: "objects" },
+    { name: "Branch Shelves", path: "/Branch-Shelves", secondPath: "/Branch-Shelves-more", type: "objects" },
   ];
 
   const spaces = [

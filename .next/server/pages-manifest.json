@@ -2,5 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/Branch-Shelves-more": "pages/Branch-Shelves-more.js",
+  "/Branch-Shelves": "pages/Branch-Shelves.js",
   "/": "pages/index.js"
 }
