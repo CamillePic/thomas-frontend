@@ -15,15 +15,10 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/Cat-Stuff-Bowl": [
+    "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Cat-Stuff-Bowl.js"
-    ],
-    "/Cat-Stuff-Tree": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Cat-Stuff-Tree.js"
+      "static/chunks/pages/index.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

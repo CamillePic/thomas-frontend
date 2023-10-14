@@ -6,7 +6,7 @@ const OllainvilleInfo = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
-        <div className={styles.infoTitle}>Ollainville House</div>
+        <h1 className={styles.infoTitle}>Ollainville House</h1>
         <div className={styles.info}>
         130m²<br></br><span>Design to tender (ESQ-DCE)<br></br>Built<br></br>2020 - 2021</span><p></p>
         The clients wanted a simple house, on one level, with a patio and a
@@ -24,6 +24,7 @@ const OllainvilleInfo = () => {
         <img src="/gallery/OH_GALLERY_2.jpg" className={styles.imageTwo} />
         <img src="/gallery/OH_GALLERY_3.jpg" className={styles.imageThree} />
         <img src="/gallery/OH_GALLERY_4.jpg" className={styles.imageThree} />
+        <img src="/gallery/OH_GALLERY_5.jpg" className={styles.imageThree} />
 
       </div>
     </div>

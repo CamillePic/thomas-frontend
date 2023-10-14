@@ -9,7 +9,7 @@ const CatStuffBowl = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
-        <div className={styles.infoTitle}>Pebble Cat Bowl</div>
+        <h1 className={styles.infoTitle}>Pebble Cat Bowl</h1>
         <div className={styles.info}>
           Enameled ceramic<br></br>Handmade in France<br></br>
           <span>5x11cm (variable dimensions)<br></br>50€</span>

@@ -13,7 +13,7 @@ function App({ Component, pageProps }) {
           name="Thomas Takada"
           content="I design objects and fabricate them in limited series by collaborating with local artisans. Find them for sale on this website or contact me for special orders."
         ></meta>
-          <link rel="icon" href="/logoTT.png" />
+          <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
     </>
