@@ -73,7 +73,7 @@ function ChickenGarage() {
             {showPopUpA && (
               <LeafPopup onClose={handleClosePopUp} >
                 <div className={styles.popupBtnA}>
-                  <p>A house for cars, farm equipment and chickens...
+                  <p>A house for cars, farm equipment and chickens...  
                   <Link href="/Chicken-Garage-more">
                     <button className={styles.insideBtn}>See more</button>
                   </Link>
