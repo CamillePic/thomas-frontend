@@ -20,15 +20,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
-    "/Branch-Shelves": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Branch-Shelves.js"
-    ],
     "/Branch-Shelves-more": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Branch-Shelves-more.js"
+    ],
+    "/Lamp-Anyone-Can-Make": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Lamp-Anyone-Can-Make.js"
+    ],
+    "/Lamp-Anyone-Can-Make-more": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Lamp-Anyone-Can-Make-more.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
