@@ -1,29 +1,23 @@
-import '../styles/globals.css';
-import Head from 'next/head';
+import "../styles/globals.css";
+import Head from "next/head";
 import React from "react";
 import Menu from "../components/Menu";
-import { CartProvider } from 'use-shopping-cart';
-import { loadStripe } from '@stripe/stripe-js';
 
 function App({ Component, pageProps }) {
   return (
-    <CartProvider
-    mode="payment"
-    cartMode="client-only"
-    stripe={process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}
-    successUrl="stripe.com"
-    cancelUrl="twitter.com/dayhaysoos"
-    currency="EUR"
-    shouldPersist={true}>
-    <Menu />
+    <>
+      <Menu />
       <Head>
+        <title>Thomas Takada</title>
+        <meta
+          name="Thomas Takada"
+          content="I design objects and fabricate them in limited series by collaborating with local artisans. Find them for sale on this website or contact me for special orders."
+        ></meta>
+          <link rel="icon" href="/logoTT.png" />
       </Head>
       <Component {...pageProps} />
-    </CartProvider>
+    </>
   );
 }
 
 export default App;
-
-
-
