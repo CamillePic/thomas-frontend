@@ -62,7 +62,7 @@
     left: 5%;
     width: 40%;
     z-index: 999; 
-    transition: opacity 0.3s;
+    transition: opacity 0.2s;
     /* Adjust the z-index value to make sure it's above other content */
 }
 

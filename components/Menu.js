@@ -60,7 +60,7 @@ const Menu = () => {
       const scrollY = window.scrollY;
       if (windowWidth <= 800) {
         setIsMenuVisible(scrollY <= 100);
-        setMenuOpacity(1 - scrollY / 200); // Adjust the 200 to control the fade out speed
+        setMenuOpacity(1 - scrollY / 100); // Adjust the 200 to control the fade out speed
         setVisible(scrollY > 300); // Show the "To the Top" button when scrolled down 300px
       }
     };
