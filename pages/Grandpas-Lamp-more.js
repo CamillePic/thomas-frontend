@@ -23,7 +23,11 @@ const LeafLampInfo = () => {
           been weathered and are somewhat imperfect.
         </div>
         <div className={styles.optionsBtn}>
-        <button className={styles.buyBtn} >
+        <a href="mailto: takadathomas@yahoo.com" className={styles.buyBtn}>
+          <p className={styles.inquire}>Inquire</p>
+        </a>
+
+        {/* <button className={styles.buyBtn} >
         <a href="https://buy.stripe.com/aEU7uv3XT8qU4iAbIL" style={{ textDecoration: "none", color: "black", fontWeight: 100, fontFamily: "Open Sans", fontSize: "1rem"}}>Buy Size S</a>
         </button >
         <button className={styles.buyBtn} >
@@ -31,7 +35,7 @@ const LeafLampInfo = () => {
         </button >
         <button className={styles.buyBtn} >
         <a href="https://buy.stripe.com/4gweWXbql9uYbL29AE" style={{ textDecoration: "none", color: "black", fontWeight: 100, fontFamily: "Open Sans", fontSize: "1rem"}}>Buy Size L</a>
-        </button >
+        </button > */}
         </div>      </div>
       <div className={styles.gallery}>
         <img src="/gallery/GL_GALLERY_1.jpg" className={styles.imageOne} alt="Gallery 1" />

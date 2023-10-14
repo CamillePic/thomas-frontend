@@ -6,7 +6,7 @@ const ChickenGarageInfo = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
-        <div className={styles.infoTitle}>Chicken Garage</div>
+        <h1 className={styles.infoTitle}>Chicken Garage</h1>
         <div className={styles.info}>
         90m²<br></br><span>Design to construction<br></br>Ongoing<br></br>2023</span><p></p>
           This project is located in the south west of France. The original garage was falling down and needed to be rebuilt, which created the opportunity to integrate a chicken coop into the design. The client had a forest nearby where we selected Robinia pseudoacacia trees to serve as structural columns.

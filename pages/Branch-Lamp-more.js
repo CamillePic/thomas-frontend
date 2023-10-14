@@ -7,7 +7,7 @@ const BranchLampInfo = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
-        <div className={styles.infoTitle}>Branch Lamp</div>
+        <h1 className={styles.infoTitle}>Branch Lamp</h1>
         <div className={styles.info}>
           Steel<br></br>
           <span>200cm</span>

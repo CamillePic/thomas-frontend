@@ -6,7 +6,7 @@ const CatStuffTree = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
-        <div className={styles.infoTitle}>Cat Tree</div>
+        <h1 className={styles.infoTitle}>Cat Tree</h1>
         <div className={styles.info}>
           Steel, aluminum, felt, oak<br></br>
           <span>120cm <br></br>2800€</span>
