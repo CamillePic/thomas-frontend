@@ -26,7 +26,7 @@ const Home = () => {
           <div className={styles.infoTitle}>Architecte DE HMONP</div>
           <div className={styles.info}>
             <p className={styles.paragraphe}>
-              Hello, I am an architect based in Paris. Central to my design
+              I am an architect based in Paris. Central to my design
               philosophy are ecology, material logic and poetic analogies.
             </p>
 
