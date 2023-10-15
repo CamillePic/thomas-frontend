@@ -36,13 +36,11 @@
     border: none;
     background: transparent;
     text-decoration: underline;
-    color: #000;
+    cursor: pointer;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 100;
-    padding: 0%;
-    margin: 0%;
-    cursor: pointer;
+    color: #000;  
   }
 
   .popupBtnA {
@@ -65,13 +63,11 @@
     border: none;
     background: transparent;
     text-decoration: underline;
-    color: #000;
+    cursor: pointer;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 100;
-    padding: 0%;
-    margin: 0%;
-    cursor: pointer;
+    color: #000;  
   }
   
     }
