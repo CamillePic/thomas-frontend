@@ -14,7 +14,7 @@
   }
 
   /* pour les boutons d'achat une fois réactivés */
-  
+
   /* .buyBtn {
     width: 25%;
     align-self: center;
@@ -156,7 +156,9 @@
     height: auto;
 
   }
-
+  .inquire {
+    margin: 0.2%;
+  }
   .buyBtn {
     width: 20%;
     align-self: center;
