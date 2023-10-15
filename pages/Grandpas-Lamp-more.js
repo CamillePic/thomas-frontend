@@ -22,11 +22,10 @@ const LeafLampInfo = () => {
           The man-made elements are minimal and express fragility. They have
           been weathered and are somewhat imperfect.
         </div>
-        <div className={styles.optionsBtn}>
+        {/* <div className={styles.optionsBtn}> */}
         <a href="mailto: takadathomas@yahoo.com" className={styles.buyBtn}>
           <p className={styles.inquire}>Inquire</p>
         </a>
-
         {/* <button className={styles.buyBtn} >
         <a href="https://buy.stripe.com/aEU7uv3XT8qU4iAbIL" style={{ textDecoration: "none", color: "black", fontWeight: 100, fontFamily: "Open Sans", fontSize: "1rem"}}>Buy Size S</a>
         </button >
@@ -36,7 +35,8 @@ const LeafLampInfo = () => {
         <button className={styles.buyBtn} >
         <a href="https://buy.stripe.com/4gweWXbql9uYbL29AE" style={{ textDecoration: "none", color: "black", fontWeight: 100, fontFamily: "Open Sans", fontSize: "1rem"}}>Buy Size L</a>
         </button > */}
-        </div>      </div>
+        {/* </div>      */}
+         </div>
       <div className={styles.gallery}>
         <img src="/gallery/GL_GALLERY_1.jpg" className={styles.imageOne} alt="Gallery 1" />
         <img src="/gallery/GL_GALLERY_2.jpg" className={styles.imageTwo} alt="Gallery 2" />

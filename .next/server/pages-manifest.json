@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Grandpas-Lamp": "pages/Grandpas-Lamp.js",
-  "/Grandpas-Lamp-more": "pages/Grandpas-Lamp-more.js"
+  "/Branch-Lamp": "pages/Branch-Lamp.js",
+  "/Branch-Lamp-more": "pages/Branch-Lamp-more.js"
 }

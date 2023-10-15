@@ -13,7 +13,9 @@
     grid-row: 1 / 2;
   }
 
-  .buyBtn {
+  /* pour les boutons d'achat une fois réactivés */
+  
+  /* .buyBtn {
     width: 25%;
     align-self: center;
     padding: 0.2%;
@@ -29,7 +31,7 @@
   .optionsBtn {
     display: flex;
     justify-content:  space-around;
-  }
+  } */
 
 
   @media only screen and (min-width: 880px) {
@@ -45,7 +47,7 @@
       grid-column: 1 / 2;
       grid-row: 1 / 4;
     }
-    .buyBtn {
+    /* .buyBtn {
       width: 25%;
       align-self: center;
       padding: 0.2%;
@@ -57,7 +59,7 @@
       text-decoration: none;
       color: #000;
       font-weight: 100;
-    }
+    } */
   
   }
   
@@ -155,3 +157,54 @@
 
   }
 
+  .buyBtn {
+    width: 20%;
+    align-self: center;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 1rem;
+    color: #000;
+    border: solid 0.5px #000;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 880px) {
+    .container {
+      grid-template-columns: 30% 40% 30%;
+      grid-template-rows: 20% repeat(2, auto);
+      height: 100vh;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .menu {
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
+    }
+    .buyBtn {
+      width: 20%;
+      align-self: center;
+      margin-top: 5%;
+      margin-bottom: 0%;
+      background-color: transparent;
+      text-decoration: none;
+      font-family: "Open Sans";
+      font-weight: 100;
+      font-size: 16px;
+      color: #000;
+      border: solid 0.5px #000;
+      align-content: center;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .inquire {
+      margin: 0.2%;
+    }
+  }
