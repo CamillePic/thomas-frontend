@@ -11,8 +11,7 @@ const CatStuffTree = () => {
           Steel, aluminum, felt, oak<br></br>
           <span>120cm <br></br>2800€</span>
           <p></p>
-          The vast majority of cat furniture is unattractive, of poor quality
-          and mass-produced in faraway countries. We wanted to create high
+          We wanted to create high
           quality, poetic furniture, handcrafted in France. From a cat's point
           of view, plants become landscapes and furniture becomes architecture.
           Our approach was to find a common scale between cats and humans. This
