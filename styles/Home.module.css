@@ -113,7 +113,7 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
   .container {
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 40% repeat(2, auto);
+    grid-template-rows: 42% repeat(2, auto);
     height: 110vh;
     width: 100%;
     padding: 0;
