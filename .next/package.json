@@ -1,1 +1,6 @@
 {"type": "commonjs"}
+"scripts": {
+    "generate-sitemap": "node generate-sitemap.js",
+    "build": "npm run generate-sitemap && next build",
+    "start": "next start"
+  }
