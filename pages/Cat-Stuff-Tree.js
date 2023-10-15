@@ -11,7 +11,7 @@ const CatStuffTree = () => {
           Steel, aluminum, felt, oak<br></br>
           <span>120cm <br></br>2800€</span>
           <p></p>
-          We wanted to create high
+          My brother Léo and I wanted to create high
           quality, poetic furniture, handcrafted in France. From a cat's point
           of view, plants become landscapes and furniture becomes architecture.
           Our approach was to find a common scale between cats and humans. This
