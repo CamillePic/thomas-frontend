@@ -50,7 +50,7 @@ function PlasticLamps() {
     }, 200); // Set the delay time to match the fade-out duration
   };
 
-  BranchLamp.category = "objects";
+  PlasticLamps.category = "objects";
   
   return (
     <div>
