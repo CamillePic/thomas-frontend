@@ -26,7 +26,7 @@ const PlasticLampsInfo = () => {
         <img src="/gallery/PL_SHROOM_ZOOM.jpg" className={styles.imageTwo} />
         <img src="/gallery/PL_SHROUD_ON.jpg" className={styles.imageThree} />
         <img src="/gallery/PL_TIE_ON.jpg" className={styles.imageThree} />
-        <img src="/gallery/PL_TIE_ZOOM_OFF.jpg" className={styles.imageThree} />
+        <img src="/gallery/PL_TIE_ZOOM.jpg" className={styles.imageThree} />
 
       </div>
 
