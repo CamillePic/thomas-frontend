@@ -26,6 +26,8 @@ const Menu = () => {
   const spaces = [
     { name: "Innermost House", path: "/Innermost-House", secondPath: "/Innermost-House-more", type: "spaces" },
     { name: "ChickenGarage", path: "/Chicken-Garage", secondPath: "/Chicken-Garage-more", type: "spaces" },
+    { name: "Tongji Expo", path: "/Tongji-Expo", secondPath: "/Tongji-Expo-more", type: "spaces" },
+
   ];
 
  const [windowWidth, setWindowWidth] = useState(0);
