@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NextImage from "next/image";
-import styles from "../styles/InnermostHouse.module.css";
+import styles from "../styles/TongjiExpo.module.css";
 import LeafPopup from "./popupInfo/LeafPopup";
 import Link from "next/link";
 
@@ -81,7 +81,7 @@ function TongjiExpo() {
               <div className={styles.popupBtnA}>
                 <p>Tongji Expo</p>
                 <p>...  
-                <Link href="/Innermost-House-more">
+                <Link href="/Tongji-Expo-more">
                   <button className={styles.insideBtn}>See more</button>
                 </Link>
                 </p>
