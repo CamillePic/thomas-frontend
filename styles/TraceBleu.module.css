@@ -1,0 +1,76 @@
+.container {
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+  }
+  
+  .hotspots {
+    position: relative;
+  }
+  
+  .hotspotA {
+    font-family: "EB Garamond", regular;
+    font-weight: 100;
+    animation: fader 2s ease infinite;
+    transition: all 0.2s;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 20%; 
+    left: 70%; 
+    cursor: pointer;
+  }
+
+  .insideBtn {
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    color: #000;  
+    text-align: left;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .popupBtnA {
+    position: fixed;
+    bottom: 0.2%; 
+    left: 5%; 
+    font-size: 14px;
+    text-align: left;
+  }
+
+
+  @media only screen and (min-width: 880px) {
+  .popupBtnA {
+    position: fixed;
+    bottom: 0.2%; 
+    left: 2%; 
+    font-size: 16px;
+    text-align: left;
+  }
+  .insideBtn {
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: #000;  
+  }
+
+    }
+  

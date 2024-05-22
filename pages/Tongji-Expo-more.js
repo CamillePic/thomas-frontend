@@ -12,14 +12,14 @@ const TongjiExpoInfo = () => {
             Since we had a tight budget and only a month for design, fabrication
             and installation, we exclusively used lightly modified standardized
             elements. The assemblies are all articulated, allowing flexibility
-            for last minute changes. <br></br>
+            for last minute changes. <br></br><br></br>
             We wanted to use as little material as
             possible despite the large size of displays (up to 4m50 by 3m high).
             The minimal design tested the structural limits of the thin, 16mm
-            steel columns.<br></br>
+            steel columns.<br></br><br></br>
              Steel footings are cut out of 20mm sheet metal with
             a water jet. They are quite heavy, providing a low center of gravity
-            despite 3m high displays. <br></br>
+            despite 3m high displays. <br></br><br></br>
             Different sized tubes are simply pierced
             so they can fit together. Some are welded to the footings. Some fit
             steel cables for cross bracing.

@@ -17,7 +17,7 @@ const PlasticLampsInfo = () => {
           metal tube.
         </div>
         <a href="mailto: takadathomas@yahoo.com" className={styles.buyBtn}>
-          {/* <p className={styles.inquire}>Inquire</p> */}
+          <p className={styles.inquire}>Inquire</p>
         </a>
       </div>
       <div className={styles.gallery}>
