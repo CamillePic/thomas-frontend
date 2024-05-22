@@ -15,7 +15,7 @@ const Menu = () => {
 
   const objects = [
     { name: "Grandpa's Lamp", path: "/Grandpas-Lamp", secondPath: "/Grandpas-Lamp-more", type: "objects" },
-    { name: "Branch Lamp", path: "/Branch-Lamp", secondPath: "/Branch-Lamp-more", type: "objects" },
+    // { name: "Branch Lamp", path: "/Branch-Lamp", secondPath: "/Branch-Lamp-more", type: "objects" },
     { name: "Cat Stuff", path: "/Cat-Stuff", secondPath: "/CatStuffInfo", type: "objects" },
     { name: "Branch Shelves", path: "/Branch-Shelves", secondPath: "/Branch-Shelves-more", type: "objects" },
     { name: "Anyone's Lamp", path: "/Lamp-Anyone-Can-Make", secondPath: "/Lamp-Anyone-Can-Make-more", type: "objects" },
@@ -27,6 +27,7 @@ const Menu = () => {
     { name: "Innermost House", path: "/Innermost-House", secondPath: "/Innermost-House-more", type: "spaces" },
     { name: "ChickenGarage", path: "/Chicken-Garage", secondPath: "/Chicken-Garage-more", type: "spaces" },
     { name: "Tongji Expo", path: "/Tongji-Expo", secondPath: "/Tongji-Expo-more", type: "spaces" },
+    { name: "Tracé Bleu", path: "/Trace-Bleu", secondPath: "/Trace-Bleu-more", type: "spaces" },
 
   ];
 
