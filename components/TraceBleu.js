@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import NextImage from "next/image";
-import styles from "../styles/TongjiExpo.module.css";
+import styles from "../styles/TraceBleu.module.css";
 import LeafPopup from "./popupInfo/LeafPopup";
 import Link from "next/link";
 
-function TongjiExpo() {
+function TraceBleu() {
 
   const images = {
-    off: "/TE_WIDESCREEN_HOME_OFF.jpg",
-    on: "/TE_WIDESCREEN_HOME_ON.jpg",
+    off: "/TB_WIDESCREEN_HOME_OFF.jpg",
+    on: "/TB_WIDESCREEN_HOME_ON.jpg",
   };
 
   const [backgroundImage, setBackgroundImage] = useState(images.off);
@@ -81,7 +81,7 @@ function TongjiExpo() {
               <div className={styles.popupBtnA}>
                 <p>Tongji Expo</p>
                 <p>...  
-                <Link href="/Tongji-Expo-more">
+                <Link href="/Trace-Bleu-more">
                   <button className={styles.insideBtn}>See more</button>
                 </Link>
                 </p>
@@ -96,4 +96,4 @@ function TongjiExpo() {
   );
 }
 
-export default TongjiExpo;
+export default TraceBleu;
