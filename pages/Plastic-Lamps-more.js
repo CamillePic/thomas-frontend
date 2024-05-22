@@ -12,10 +12,11 @@ const PlasticLampsInfo = () => {
           Steel<br></br>
           <span>200cm</span>
           <p></p>
-          The structure of this lamp consists of two steel tubes. The owner must
-          find a branch to complete the structure. Hence, the natural element is
-          not only decorative but essential to the function of the lamp. The
-          simple, minimal design allows each material to speak for itself.{" "}
+          TMade from discarded things. Broken branch found at the park, single
+          use plastic bags, a damaged paver. <br></br><br></br>
+          New life is given to the branch by
+          hollowing it out and running electric cable through it. Held up by a
+          metal tube.
         </div>
         <a href="mailto: takadathomas@yahoo.com" className={styles.buyBtn}>
           <p className={styles.inquire}>Inquire</p>
@@ -27,7 +28,6 @@ const PlasticLampsInfo = () => {
         <img src="/gallery/PL_SHROUD_ON.jpg" className={styles.imageThree} />
         <img src="/gallery/PL_TIE_ON.jpg" className={styles.imageThree} />
         <img src="/gallery/PL_TIE_ZOOM_OFF.jpg" className={styles.imageThree} />
-
       </div>
 
       {/* Add more content about the Leaf Lamp here */}

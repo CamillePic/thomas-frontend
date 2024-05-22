@@ -17,6 +17,12 @@ const ChickenGarageInfo = () => {
         <img src="/gallery/CG_GALLERY_1.jpg" className={styles.imageOne} />
         <img src="/gallery/CG_GALLERY_2.jpg" className={styles.imageTwo} />
         <img src="/gallery/CG_GALLERY_3.jpg" className={styles.imageThree} />
+        <img src="/gallery/CG_GALLERY_4.jpg" className={styles.imageThree} />
+        <img src="/gallery/CG_GALLERY_5.jpg" className={styles.imageThree} />
+        <img src="/gallery/CG_GALLERY_6.jpg" className={styles.imageThree} />
+        <img src="/gallery/CG_GALLERY_7.jpg" className={styles.imageThree} />
+        <img src="/gallery/CG_GALLERY_8.jpg" className={styles.imageThree} />
+
       </div>
     </div>
   );
