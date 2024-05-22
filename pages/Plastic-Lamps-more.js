@@ -9,9 +9,7 @@ const PlasticLampsInfo = () => {
       <div className={styles.infoContainer}>
         <h1 className={styles.infoTitle}>Plastic Lamps</h1>
         <div className={styles.info}>
-          Steel<br></br>
-          <span>200cm</span>
-          <p></p>
+
           TMade from discarded things. Broken branch found at the park, single
           use plastic bags, a damaged paver. <br></br><br></br>
           New life is given to the branch by
@@ -19,7 +17,7 @@ const PlasticLampsInfo = () => {
           metal tube.
         </div>
         <a href="mailto: takadathomas@yahoo.com" className={styles.buyBtn}>
-          <p className={styles.inquire}>Inquire</p>
+          {/* <p className={styles.inquire}>Inquire</p> */}
         </a>
       </div>
       <div className={styles.gallery}>
