@@ -23,7 +23,7 @@ const Home = () => {
     <div className={styles.container}>
       <div className={styles.infoContainer}>
         <div className={styles.gradient}>
-          <div className={styles.infoTitle}>Architecte DE HMONP</div>
+          <div className={styles.infoTitle}>Architecte DE HMONP, French born in Shizuoka, Japan, working across architecture, design and art</div>
           <div className={styles.info}>
             <p className={styles.paragraphe}>
               I am inspired by the feeling of alienation from our physical
