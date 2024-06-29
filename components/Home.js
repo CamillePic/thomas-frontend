@@ -26,20 +26,26 @@ const Home = () => {
           <div className={styles.infoTitle}>Architecte DE HMONP</div>
           <div className={styles.info}>
             <p className={styles.paragraphe}>
-              I am an architect based in Paris. Central to my design
-              philosophy are ecology, material logic and poetic analogies.
+              I am inspired by the feeling of alienation from our physical
+              environment as a symptom of a disaster that has already happened
+              with consequences yet to be lived. Our physical environment is
+              made abstract by complex global processes and materials with
+              shaky, ever changing meanings. At the same time, the environmental
+              impacts of our production model have delayed but physical effects
+              on day to day life. 
+             </p>
+             <p className={styles.paragraphe}> 
+              This uncomfortable feeling of disconnection
+              and disorientation has led me to a therapeutic process of sourcing
+              ubiquitous materials in my immediate vicinity. Materials are
+              subsequently assembled into fragile structures suggesting
+              dependence, degradation and vitality. The repetition of this
+              process, from collection to assembly reveals larger cycles such as
+              seasons and memory within a specific locality.
             </p>
 
             <p className={styles.paragraphe}>
-              I design objects and fabricate them in limited series by
-              collaborating with local artisans. Find them for sale on this
-              website or contact me for special orders.
-            </p>
-
-            <p className={styles.paragraphe}>
-              I am also available for architectural design and project
-              management services. Feel free to contact me if you would like to
-              collaborate.
+              Feel free to contact me if you would like to collaborate.
             </p>
             <p className={styles.contact}>
               {" "}
