@@ -15,7 +15,7 @@
 
   /* pour les boutons d'achat une fois réactivés */
 
-  /* .buyBtn {
+  buyBtn {
     width: 25%;
     align-self: center;
     padding: 0.2%;
@@ -31,7 +31,7 @@
   .optionsBtn {
     display: flex;
     justify-content:  space-around;
-  } */
+  } 
 
 
   @media only screen and (min-width: 880px) {

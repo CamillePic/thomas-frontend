@@ -31,9 +31,9 @@ const LeafLampInfo = () => {
           one.
           <br></br>
           <br></br>
-          Steel has been chosen for its ability to rust and patina with time.
+          Steel will rust and patina with time.
         </div>
-        <div className={styles.optionsBtn}>
+        {/* <div className={styles.optionsBtn}> */}
           {/* <a href="mailto: takadathomas@yahoo.com" className={styles.buyBtn}>
           <p className={styles.inquire}>Inquire</p>
         </a> */}
@@ -67,7 +67,7 @@ const LeafLampInfo = () => {
           </button>
           <button className={styles.buyBtn}>
             <a
-              href="https://buy.stripe.com/7sIaGH6618qU3ew008"
+              href="https://buy.stripe.com/4gw3ef9id4aE9CUbIS"
               style={{
                 textDecoration: "none",
                 color: "black",
@@ -79,7 +79,7 @@ const LeafLampInfo = () => {
               Buy Size L
             </a>
           </button>
-        </div>
+        {/* </div> */}
       </div>
       <div className={styles.gallery}>
         <img
