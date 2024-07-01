@@ -9,8 +9,7 @@ const PlasticLampsInfo = () => {
       <div className={styles.infoContainer}>
         <h1 className={styles.infoTitle}>Plastic Lamps</h1>
         <div className={styles.info}>
-
-          TMade from discarded things. Broken branch found at the park, single
+          Made from discarded things. Broken branch found at the park, single
           use plastic bags, a damaged paver. <br></br><br></br>
           New life is given to the branch by
           hollowing it out and running electric cable through it. Held up by a
