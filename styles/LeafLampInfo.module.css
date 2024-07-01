@@ -15,7 +15,7 @@
 
   /* pour les boutons d'achat une fois réactivés */
 
-  buyBtn {
+  .buyBtn {
     width: 25%;
     align-self: center;
     padding: 0.2%;
