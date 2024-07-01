@@ -33,7 +33,7 @@ const LeafLampInfo = () => {
           <br></br>
           Steel will rust and patina with time.
         </div>
-        {/* <div className={styles.optionsBtn}> */}
+        <div className={styles.optionsBtn}>
           {/* <a href="mailto: takadathomas@yahoo.com" className={styles.buyBtn}>
           <p className={styles.inquire}>Inquire</p>
         </a> */}
@@ -79,7 +79,7 @@ const LeafLampInfo = () => {
               Buy Size L
             </a>
           </button>
-        {/* </div> */}
+        </div>
       </div>
       <div className={styles.gallery}>
         <img
