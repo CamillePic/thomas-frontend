@@ -31,7 +31,7 @@ const LeafLampInfo = () => {
           one.
           <br></br>
           <br></br>
-          Steel will rust and patina with time.
+          The uncoated steel might rust and patina with time.
         </div>
         <div className={styles.optionsBtn}>
           {/* <a href="mailto: takadathomas@yahoo.com" className={styles.buyBtn}>
@@ -47,6 +47,7 @@ const LeafLampInfo = () => {
                 fontFamily: "Open Sans",
                 fontSize: "1rem",
               }}
+              target="_blank"
             >
               Buy Size S
             </a>
@@ -61,6 +62,7 @@ const LeafLampInfo = () => {
                 fontFamily: "Open Sans",
                 fontSize: "1rem",
               }}
+              target="_blank"
             >
               Buy Size M
             </a>
@@ -75,6 +77,7 @@ const LeafLampInfo = () => {
                 fontFamily: "Open Sans",
                 fontSize: "1rem",
               }}
+              target="_blank"
             >
               Buy Size L
             </a>

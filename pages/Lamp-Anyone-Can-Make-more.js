@@ -23,6 +23,7 @@ const LampAnyoneCanMakeInfo = () => {
           <a
             href="https://buy.stripe.com/cN20238e97mQbL2fZ5"
             style={{ textDecoration: "none", color: "black", fontWeight: 100, fontFamily: "Open Sans", fontSize: "1rem"}}
+            target="_blank"
           >
             Buy
           </a>

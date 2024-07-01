@@ -25,6 +25,7 @@ const CatStuffBowl = () => {
           <a
             href="https://buy.stripe.com/7sIcOPgKF0YsbL25kq"
             style={{ textDecoration: "none", color: "black", fontWeight: 100, fontFamily: "Open Sans", fontSize: "1rem"}}
+            target="_blank"
           >
             Buy
           </a>
