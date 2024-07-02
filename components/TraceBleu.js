@@ -79,8 +79,8 @@ function TraceBleu() {
           {showPopUpA && (
             <LeafPopup onClose={handleClosePopUp} >
               <div className={styles.popupBtnA}>
-                <p>Tongji Expo</p>
-                <p>...  
+                <p>Tracé Bleu</p>
+                <p>Models for Architecturestudio shown at the 104 Paris...  
                 <Link href="/Trace-Bleu-more">
                   <button className={styles.insideBtn}>See more</button>
                 </Link>

@@ -80,7 +80,7 @@ function TongjiExpo() {
             <LeafPopup onClose={handleClosePopUp} >
               <div className={styles.popupBtnA}>
                 <p>Tongji Expo</p>
-                <p>...  
+                <p>Scenography for Tongji University in Versailles...  
                 <Link href="/Tongji-Expo-more">
                   <button className={styles.insideBtn}>See more</button>
                 </Link>

@@ -81,7 +81,7 @@ function PlasticLamps() {
             <LeafPopup onClose={handleClosePopUp} >
               <div className={styles.popupBtnA}>
                 <p>Plastic Lamps</p>
-                <p>...
+                <p>Giving new life to discarded things...
                 <Link href="/Plastic-Lamps-more">
                   <button className={styles.insideBtn}>See more</button>
                 </Link>
