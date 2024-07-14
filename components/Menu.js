@@ -25,7 +25,7 @@ const Menu = () => {
 
   const spaces = [
     { name: "Innermost House", path: "/Innermost-House", secondPath: "/Innermost-House-more", type: "spaces" },
-    { name: "ChickenGarage", path: "/Chicken-Garage", secondPath: "/Chicken-Garage-more", type: "spaces" },
+    { name: "Chicken Garage", path: "/Chicken-Garage", secondPath: "/Chicken-Garage-more", type: "spaces" },
     { name: "Tongji Expo", path: "/Tongji-Expo", secondPath: "/Tongji-Expo-more", type: "spaces" },
     { name: "Tracé Bleu", path: "/Trace-Bleu", secondPath: "/Trace-Bleu-more", type: "spaces" },
 
