@@ -47,11 +47,11 @@ const CatStuffTree = () => {
         />
         <img src="/gallery/CS_GALLERY_TREE_6.jpg" className={styles.imageSix} />
         <img src="/gallery/CS_GALLERY_TREE_7.jpg" className={styles.imageSix} />
-        <img src="/gallery/CS_GALLERY_TREE_8.png" className={styles.imageSix} />
-        <img src="/gallery/CS_GALLERY_TREE_9.png" className={styles.imageSix} />
-        <img src="/gallery/CS_GALLERY_TREE_10.png" className={styles.imageSix} />
-        <img src="/gallery/CS_GALLERY_TREE_11.png" className={styles.imageSix} />
-        <img src="/gallery/CS_GALLERY_TREE_12.png" className={styles.imageSix} />
+        <img src="/gallery/CS_GALLERY_TREE_8.jpg" className={styles.imageSix} />
+        <img src="/gallery/CS_GALLERY_TREE_9.jpg" className={styles.imageSix} />
+        <img src="/gallery/CS_GALLERY_TREE_10.jpg" className={styles.imageSix} />
+        <img src="/gallery/CS_GALLERY_TREE_11.jpg" className={styles.imageSix} />
+        <img src="/gallery/CS_GALLERY_TREE_12.jpg" className={styles.imageSix} />
         <img src="/gallery/CS_GALLERY_TREE_13.png" className={styles.imageSix} />
 
       </div>
