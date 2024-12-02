@@ -39,7 +39,7 @@ const LeafLampInfo = () => {
         </a> */}
           <button className={styles.buyBtn}>
             <a
-              href="https://buy.stripe.com/7sIaGH6618qU3ew008"
+              href="https://buy.stripe.com/5kA0239id7mQ8yQbIV"
               style={{
                 textDecoration: "none",
                 color: "black",
@@ -54,7 +54,7 @@ const LeafLampInfo = () => {
           </button>
           <button className={styles.buyBtn}>
             <a
-              href="https://buy.stripe.com/00gcOP6616iM7uMaEN"
+              href="https://buy.stripe.com/14k02351XcHa7uMaEQ"
               style={{
                 textDecoration: "none",
                 color: "black",
@@ -69,7 +69,7 @@ const LeafLampInfo = () => {
           </button>
           <button className={styles.buyBtn}>
             <a
-              href="https://buy.stripe.com/4gw3ef9id4aE9CUbIS"
+              href="https://buy.stripe.com/eVa9CDbql0Ys6qI00f"
               style={{
                 textDecoration: "none",
                 color: "black",
