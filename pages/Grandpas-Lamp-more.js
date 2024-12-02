@@ -14,7 +14,7 @@ const LeafLampInfo = () => {
           <br></br>
           <br></br>
           <span>
-            L 130cm 700€<br></br>M 75cm 600€<br></br>S 50cm 500€
+            L 130cm 990€<br></br>M 75cm 950€<br></br>S 50cm 900€
           </span>
           <p></p>
           These lamps are about our relationship with nature. The natural
