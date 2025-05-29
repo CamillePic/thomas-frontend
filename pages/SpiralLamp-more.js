@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Menu from "../components/Menu";
-import styles from "../styles/LampAnyoneCanMakeInfo.module.css";
+import styles from "../styles/SpiralLampInfo.module.css";
 import Link from "next/link";
 
-const LampAnyoneCanMakeInfo = () => {
+const SpiralLampInfo = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
-        <h1 className={styles.infoTitle}>Lamp Anyone Can Make</h1>
+        <h1 className={styles.infoTitle}>Spiral lamp</h1>
         <div className={styles.info}>
         Aluminum, paper, stone<br></br>
           <span>28cm high (variable size)</span><br></br>140€
@@ -19,7 +19,7 @@ const LampAnyoneCanMakeInfo = () => {
           stone is placed for stability. This simple process can create an
           infinite variety of lamps.{" "}
         </div>
-        <button className={styles.buyBtn}>
+        {/* <button className={styles.buyBtn}>
           <a
             href="https://buy.stripe.com/cN20238e97mQbL2fZ5"
             style={{ textDecoration: "none", color: "black", fontWeight: 100, fontFamily: "Open Sans", fontSize: "1rem"}}
@@ -27,7 +27,7 @@ const LampAnyoneCanMakeInfo = () => {
           >
             Buy
           </a>
-        </button>
+        </button> */}
       </div>
       <div className={styles.gallery}>
         <img src="/gallery/LACM_GALLERY_1.jpg" className={styles.imageOne} />
@@ -42,4 +42,4 @@ const LampAnyoneCanMakeInfo = () => {
   );
 };
 
-export default LampAnyoneCanMakeInfo;
+export default SpiralLampInfo;

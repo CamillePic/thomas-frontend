@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import NextImage from "next/image";
-import styles from "../styles/LampAnyoneCanMake.module.css";
+import styles from "../styles/SpiralLamp.module.css";
 import LeafPopup from "./popupInfo/LeafPopup";
 import Link from "next/link";
 
-function LampAnyoneCanMake() {
+function SpiralLamp() {
   const images = {
     off: "/LACM_WIDESCREEN_OFF.jpg",
     on: "/LACM_WIDESCREEN_ON.jpg",
@@ -50,7 +50,7 @@ function LampAnyoneCanMake() {
     }, 200); // Set the delay time to match the fade-out duration
   };
 
-  LampAnyoneCanMake.category = "objects";
+  SpiralLamp.category = "objects";
   
   return (
     <div>
@@ -96,4 +96,4 @@ function LampAnyoneCanMake() {
   );
 }
 
-export default LampAnyoneCanMake;
+export default SpiralLamp;
