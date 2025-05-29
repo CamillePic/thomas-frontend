@@ -9,13 +9,11 @@ const ParkLampsInfo = () => {
       <div className={styles.infoContainer}>
         <h1 className={styles.infoTitle}>Branch Lamp</h1>
         <div className={styles.info}>
-          Steel<br></br>
-          <span>200cm</span>
           <p></p>
           Lamps created from materials found by chance in the Buttes Chaumont
           park during weekly walks. These lamps were made over the course of
           several seasons, hence describing a natural cycle. The research is
-          based on three questions: <br></br>
+          based on three questions: <br></br><br></br>
           1 What are the physical properties of these
           materials? <br></br>
           2 What symbols do they carry? <br></br>
