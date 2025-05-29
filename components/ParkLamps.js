@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import NextImage from "next/image";
-import styles from "../styles/BranchLamp.module.css";
+import styles from "../styles/ParkLamps.module.css";
 import LeafPopup from "./popupInfo/LeafPopup";
 import Link from "next/link";
 
-function BranchLamp() {
+function ParkLamps() {
   const images = {
-    off: "/BL_WIDESCREEN_OFF.jpg",
-    on: "/BL_WIDESCREEN_ON.jpg",
+    off: "/PL_WIDESCREEN_HOME_OFF.jpg",
+    on: "/PL_WIDESCREENHOME_ON.jpg",
   };
 
   const [backgroundImage, setBackgroundImage] = useState(images.off);
@@ -50,7 +50,7 @@ function BranchLamp() {
     }, 200); // Set the delay time to match the fade-out duration
   };
 
-  BranchLamp.category = "objects";
+  ParkLamps.category = "objects";
   
   return (
     <div>
@@ -80,8 +80,8 @@ function BranchLamp() {
           {showPopUpA && (
             <LeafPopup onClose={handleClosePopUp} >
               <div className={styles.popupBtnA}>
-                <p>Branch Lamp</p>
-                <p>A simple floor lamp held by a branch...
+                <p>Park Lamps</p>
+                <p>Lamps made from materials found in the park...
                 <Link href="/Branch-Lamp-more">
                   <button className={styles.insideBtn}>See more</button>
                 </Link>
@@ -96,4 +96,4 @@ function BranchLamp() {
   );
 }
 
-export default BranchLamp;
+export default ParkLamps;
