@@ -7,7 +7,7 @@ const ParkLampsInfo = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
-        <h1 className={styles.infoTitle}>Branch Lamp</h1>
+        <h1 className={styles.infoTitle}>Park Lamps</h1>
         <div className={styles.info}>
           <p></p>
           Lamps created from materials found by chance in the Buttes Chaumont
