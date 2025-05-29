@@ -10,7 +10,7 @@ const SpiralLampInfo = () => {
         <h1 className={styles.infoTitle}>Spiral lamp</h1>
         <div className={styles.info}>
         Aluminum, paper, stone<br></br>
-          <span>28cm high (variable size)</span><br></br>140€
+          <span>28cm high (variable size)</span><br></br>
           <p></p>
           This lamp is an exercise in simplicity of materials, of gesture and of
           fabrication. An industrial aluminum tube is wrapped around a cylinder
