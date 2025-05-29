@@ -7,7 +7,7 @@ import Link from "next/link";
 function ParkLamps() {
   const images = {
     off: "/PL_WIDESCREEN_HOME_OFF.jpg",
-    on: "/PL_WIDESCREENHOME_ON.jpg",
+    on: "/PL_WIDESCREEN_HOME_ON.jpg",
   };
 
   const [backgroundImage, setBackgroundImage] = useState(images.off);
@@ -82,7 +82,7 @@ function ParkLamps() {
               <div className={styles.popupBtnA}>
                 <p>Park Lamps</p>
                 <p>Lamps made from materials found in the park...
-                <Link href="/Branch-Lamp-more">
+                <Link href="/Park-Lamps-more">
                   <button className={styles.insideBtn}>See more</button>
                 </Link>
                 </p>
