@@ -80,9 +80,9 @@ function SpiralLamp() {
           {showPopUpA && (
             <LeafPopup onClose={handleClosePopUp} >
               <div className={styles.popupBtnA}>
-                <p>Lamp Anyone Can Make</p>
+                <p>Spiral Lamp</p>
                 <p>An exercise in simplicity... 
-                <Link href="/Lamp-Anyone-Can-Make-more">
+                <Link href="/SpiralLamp-more">
                   <button className={styles.insideBtn}>See more</button>
                 </Link>
                 </p>
