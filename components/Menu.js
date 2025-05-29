@@ -18,9 +18,9 @@ const Menu = () => {
     { name: "Cat Stuff", path: "/Cat-Stuff", secondPath: "/CatStuffInfo", type: "objects" },
     { name: "Branch Shelves", path: "/Branch-Shelves", secondPath: "/Branch-Shelves-more", type: "objects" },
     { name: "Spiral Lamp", path: "/SpiralLamp", secondPath: "/SpiralLamp-more", type: "objects" },
-    { name: "Plastic Lamps", path: "/Plastic-Lamps", secondPath: "/Plastic-Lamps-more", type: "objects" },
-    { name: "Branch Lamp", path: "/Branch-Lamp", secondPath: "/Branch-Lamp-more", type: "objects" },
-
+    // { name: "Plastic Lamps", path: "/Plastic-Lamps", secondPath: "/Plastic-Lamps-more", type: "objects" },
+    // { name: "Branch Lamp", path: "/Branch-Lamp", secondPath: "/Branch-Lamp-more", type: "objects" },
+    { name: "Park Lamps", path: "/Park-Lamps", secondPath: "/Park-Lamps-more", type: "objects" },
   ];
 
   const spaces = [
